@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|c:\\users\\fagun\\source\\repos\\calculadora de tma\\calculadora de tma\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|solutionrelative:calculadora de tma\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|c:\\users\\fagun\\source\\repos\\calculadora de tma\\calculadora de tma\\modelos\\assistente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|solutionrelative:calculadora de tma\\modelos\\assistente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|c:\\users\\fagun\\source\\repos\\calculadora de tma\\calculadora de tma\\menu\\menuadicionarchamada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|solutionrelative:calculadora de tma\\menu\\menuadicionarchamada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|c:\\users\\fagun\\source\\repos\\calculadora de tma\\calculadora de tma\\modelos\\chamada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|solutionrelative:calculadora de tma\\modelos\\chamada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|c:\\users\\fagun\\source\\repos\\calculadora de tma\\calculadora de tma\\menu\\menuadicionarlinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|solutionrelative:calculadora de tma\\menu\\menuadicionarlinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|c:\\users\\fagun\\source\\repos\\calculadora de tma\\calculadora de tma\\banco\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD9A3954-B576-4EDD-8397-ED6543869496}|Calculadora de TMA\\Calculadora de TMA.csproj|solutionrelative:calculadora de tma\\banco\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 290,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Program.cs",
+              "RelativeDocumentMoniker": "Calculadora de TMA\\Program.cs",
+              "ToolTip": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Program.cs",
+              "RelativeToolTip": "Calculadora de TMA\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T15:54:42.354Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuAdicionarLinha.cs",
+              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Menu\\MenuAdicionarLinha.cs",
+              "RelativeDocumentMoniker": "Calculadora de TMA\\Menu\\MenuAdicionarLinha.cs",
+              "ToolTip": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Menu\\MenuAdicionarLinha.cs",
+              "RelativeToolTip": "Calculadora de TMA\\Menu\\MenuAdicionarLinha.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T23:57:24.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Chamada.cs",
+              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Modelos\\Chamada.cs",
+              "RelativeDocumentMoniker": "Calculadora de TMA\\Modelos\\Chamada.cs",
+              "ToolTip": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Modelos\\Chamada.cs",
+              "RelativeToolTip": "Calculadora de TMA\\Modelos\\Chamada.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T23:49:04.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DAL.cs",
+              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Banco\\DAL.cs",
+              "RelativeDocumentMoniker": "Calculadora de TMA\\Banco\\DAL.cs",
+              "ToolTip": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Banco\\DAL.cs",
+              "RelativeToolTip": "Calculadora de TMA\\Banco\\DAL.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvxcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T22:47:17.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assistente.cs",
+              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Modelos\\Assistente.cs",
+              "RelativeDocumentMoniker": "Calculadora de TMA\\Modelos\\Assistente.cs",
+              "ToolTip": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Modelos\\Assistente.cs",
+              "RelativeToolTip": "Calculadora de TMA\\Modelos\\Assistente.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwCcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T16:38:27.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuAdicionarChamada.cs",
+              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Menu\\MenuAdicionarChamada.cs",
+              "RelativeDocumentMoniker": "Calculadora de TMA\\Menu\\MenuAdicionarChamada.cs",
+              "ToolTip": "C:\\Users\\fagun\\source\\repos\\Calculadora de TMA\\Calculadora de TMA\\Menu\\MenuAdicionarChamada.cs",
+              "RelativeToolTip": "Calculadora de TMA\\Menu\\MenuAdicionarChamada.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T16:07:08.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
