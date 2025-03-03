@@ -25,10 +25,9 @@ public class Assistente
         Console.WriteLine($"\nLinhas do assistente {Nome}:");
         foreach (var linha in LinhasAssistentes)
         {
-            float tma = CalcularTMA(linha.Linha);
-            if (tma != 0)
+            if (linha.TMA != 0)
             {
-                Console.WriteLine($"- {linha.Linha.Nome} - TMA {tma/1000} segundos");
+                Console.WriteLine($"- {linha.Linha.Nome} - TMA {linha.TMA/1000} segundos");
             }
             else
             {
@@ -36,12 +35,18 @@ public class Assistente
             }
         }
     }
-    public int CalcularTMA(Linha linha)
+    public void CalcularTMA()
     {
-        if (Chamadas.Count(c => c.Linha.Nome.Equals(linha.Nome)) == 0)
+        foreach (var linha in LinhasAssistentes)
         {
-            return 0;
+            if (Chamadas.Count(c => c.Linha.Nome.Equals(linha.Linha.Nome)) == 0)
+            {
+                linha.TMA = 0;
+            }
+            else
+            {
+                linha.TMA = Chamadas.Where(c => c.Linha.Nome.Equals(linha.Linha.Nome)).Sum(c => c.TempoDeChamada) / Chamadas.Count(c => c.Linha.Nome.Equals(linha.Linha.Nome));
+            }
         }
-        return Chamadas.Where(c => c.Linha.Nome.Equals(linha.Nome)).Sum(c => c.TempoDeChamada) / Chamadas.Count(c => c.Linha.Nome.Equals(linha.Nome));
     }
 }

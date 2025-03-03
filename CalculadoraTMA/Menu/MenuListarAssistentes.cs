@@ -15,6 +15,7 @@ internal class MenuListarAssistentes : Menu
         base.Executar(context);
         MostrarMenu("Menu Listar Assistentes");
         var assistenteDal = new DAL<Assistente>(context);
+        var linhaAssistenteDal = new DAL<LinhaAssistente>(context);
         List<Assistente> assistentes = assistenteDal.Listar();
         if (assistentes.Count == 0)
         {
@@ -25,6 +26,11 @@ internal class MenuListarAssistentes : Menu
         }
         foreach (Assistente assistente in assistentes)
         {
+            assistente.CalcularTMA();
+            foreach (var linhaAssistente in assistente.LinhasAssistentes)
+            {
+                linhaAssistenteDal.Atualizar(linhaAssistente);
+            }
             assistente.MostrarLinhas();
         }
         Console.Write("\n\nPressione qualquer tecla para voltar ao menu principal.");

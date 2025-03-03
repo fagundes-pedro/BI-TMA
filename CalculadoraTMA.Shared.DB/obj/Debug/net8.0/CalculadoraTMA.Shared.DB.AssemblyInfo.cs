@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculadoraTMA.Shared.DB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b330c81b9a65ba9690c492078a91d6f362af8581")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1905ce0c4bdc02604828215963d910cb59394620")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculadoraTMA.Shared.DB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculadoraTMA.Shared.DB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

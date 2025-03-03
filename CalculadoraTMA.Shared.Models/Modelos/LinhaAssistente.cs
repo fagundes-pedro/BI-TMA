@@ -17,4 +17,5 @@ public class LinhaAssistente
     public virtual Assistente Assistente { get; set; }
     public int LinhaId { get; set; }
     public virtual Linha Linha { get; set; }
+    public double TMA { get; set; }
 }
