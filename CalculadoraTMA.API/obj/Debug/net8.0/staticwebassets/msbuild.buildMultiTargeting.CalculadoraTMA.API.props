@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CalculadoraTMA.API.props" />
+</Project>

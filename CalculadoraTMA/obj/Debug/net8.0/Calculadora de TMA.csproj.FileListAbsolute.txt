@@ -1,0 +1,6 @@
+C:\Users\fagun\source\repos\Calculadora de TMA\Calculadora de TMA\obj\Debug\net8.0\Calculadora de TMA.csproj.AssemblyReference.cache
+C:\Users\fagun\source\repos\Calculadora de TMA\Calculadora de TMA\obj\Debug\net8.0\Calculadora de TMA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fagun\source\repos\Calculadora de TMA\Calculadora de TMA\obj\Debug\net8.0\Calculadora de TMA.AssemblyInfoInputs.cache
+C:\Users\fagun\source\repos\Calculadora de TMA\Calculadora de TMA\obj\Debug\net8.0\Calculadora de TMA.AssemblyInfo.cs
+C:\Users\fagun\source\repos\Calculadora de TMA\Calculadora de TMA\obj\Debug\net8.0\Calculadora de TMA.csproj.CoreCompileInputs.cache
+C:\Users\fagun\source\repos\Calculadora de TMA\Calculadora de TMA\obj\Debug\net8.0\Calculadora de TMA.sourcelink.json
