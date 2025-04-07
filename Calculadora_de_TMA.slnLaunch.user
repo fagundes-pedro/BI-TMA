@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "CalculadoraTMA.API\\CalculadoraTMA.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

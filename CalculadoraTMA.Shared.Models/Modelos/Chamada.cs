@@ -24,7 +24,7 @@ public class Chamada
     public virtual Assistente Assistente { get; set; }
     public int LinhaId { get; set; }
     public virtual Linha Linha { get; set; }
-    public int TempoDeChamada { get; set; }
+    public double TempoDeChamada { get; set; }
 
     public override string ToString()
     {

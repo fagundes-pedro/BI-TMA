@@ -54,8 +54,8 @@ namespace Calculadora_de_TMA.Migrations
                     b.Property<int>("LinhaId")
                         .HasColumnType("int");
 
-                    b.Property<int>("TempoDeChamada")
-                        .HasColumnType("int");
+                    b.Property<double>("TempoDeChamada")
+                        .HasColumnType("float");
 
                     b.HasKey("ChamadaId");
 

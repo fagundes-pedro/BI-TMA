@@ -194,3 +194,10 @@ C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\obj\Debug\net8
 C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\obj\Debug\net8.0\CalculadoraTMA.API.pdb
 C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\obj\Debug\net8.0\CalculadoraTMA.API.genruntimeconfig.cache
 C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\obj\Debug\net8.0\ref\CalculadoraTMA.API.dll
+C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\obj\Debug\net8.0\CalculadoraTMA.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\fagun\source\repos\Calculadora_de_TMA\CalculadoraTMA.API\bin\Debug\net8.0\CsvHelper.dll

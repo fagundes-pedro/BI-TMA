@@ -1,0 +1,278 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CalculadoraTMA.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/Assistentes": {
+      "get": {
+        "tags": [
+          "Assistentes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Assistentes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssistenteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Assistentes/{nome}": {
+      "get": {
+        "tags": [
+          "Assistentes"
+        ],
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Assistentes"
+        ],
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AssistenteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Assistentes/{id}": {
+      "delete": {
+        "tags": [
+          "Assistentes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Chamadas": {
+      "get": {
+        "tags": [
+          "Chamadas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Chamadas/{nome}": {
+      "get": {
+        "tags": [
+          "Chamadas"
+        ],
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Chamadas/Upload": {
+      "post": {
+        "tags": [
+          "Chamadas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Chamadas/All": {
+      "delete": {
+        "tags": [
+          "Chamadas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Linhas": {
+      "get": {
+        "tags": [
+          "Linhas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Linhas/{nome}": {
+      "put": {
+        "tags": [
+          "Linhas"
+        ],
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LinhaRequests"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Linhas"
+        ],
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AssistenteRequest": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LinhaRequests": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

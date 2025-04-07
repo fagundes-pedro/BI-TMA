@@ -11,7 +11,7 @@ namespace Calculadora_de_TMA.Banco;
 
 public class DAL<T> where T : class
 {
-    private readonly CalculadoraDeTmaContext context;
+    public readonly CalculadoraDeTmaContext context;
 
     public DAL(CalculadoraDeTmaContext context)
     {
