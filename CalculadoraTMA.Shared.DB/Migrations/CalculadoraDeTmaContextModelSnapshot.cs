@@ -17,7 +17,7 @@ namespace Calculadora_de_TMA.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "9.0.4")
                 .HasAnnotation("Proxies:ChangeTracking", false)
                 .HasAnnotation("Proxies:CheckEquality", false)
                 .HasAnnotation("Proxies:LazyLoading", true)
@@ -50,6 +50,9 @@ namespace Calculadora_de_TMA.Migrations
 
                     b.Property<int>("AssistenteId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("DataHora")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("LinhaId")
                         .HasColumnType("int");

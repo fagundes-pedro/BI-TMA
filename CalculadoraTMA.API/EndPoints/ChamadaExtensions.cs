@@ -17,14 +17,15 @@ public static class ChamadaExtensions
             var chamadas = await chamadaDal.ListarAsync();
             if (chamadas is null || !chamadas.Any())
             {
-                return Results.NotFound();
+                return Results.NotFound("Não foram encontradas chamadas registadas");
             }
             var resultado = chamadas.Select(chamada => new
             {
                 chamada.ChamadaId,
+                DataHora = chamada.DataHora.ToString("dd/MM/yyyy HH:mm:ss"),
                 AssistenteNome = chamada.Assistente.Nome,
                 LinhaNome = chamada.Linha.Nome,
-                TempoDeChamda = $"{Math.Round(chamada.TempoDeChamada / 1000, 2)} segundos"
+                TempoDeChamda = $"{Math.Round(chamada.TempoDeChamada / 1000, 0)} segundos"
             });
             return Results.Ok(resultado);
         })
@@ -35,15 +36,16 @@ public static class ChamadaExtensions
             var chamadas = await chamadaDal.ListarAsync();
             if (chamadas is null || !chamadas.Any())
             {
-                return Results.NotFound();
+                return Results.NotFound($"Não foram encontradas chamadas registadas para o assistente {nome}");
             }
             var chamadasDoAssistente = chamadas.Where(chamada => chamada.Assistente.Nome.ToUpper().Equals(nome.ToUpper()));
             var resultado = chamadasDoAssistente.Select(chamada => new
             {
                 chamada.ChamadaId,
+                DataHora = chamada.DataHora.ToString("dd/MM/yyyy HH:mm:ss"),
                 AssistenteNome = chamada.Assistente.Nome,
                 LinhaNome = chamada.Linha.Nome,
-                TempoDeChamda = $"{Math.Round(chamada.TempoDeChamada / 1000, 2)} segundos"
+                TempoDeChamda = $"{Math.Round(chamada.TempoDeChamada / 1000, 0)} segundos"
             });
             return Results.Ok(resultado);
         })
@@ -75,6 +77,7 @@ public static class ChamadaExtensions
             while (csv.Read())
             {
                 var chamadaId = csv.GetField<string>("ID de conversa");
+                var dataHora = csv.GetField<string>("Data");
                 var assistenteNome = csv.GetField<string>("Usuários – Interagiram");
                 var linhaNome = csv.GetField<string>("Fila");
                 var tempoDeConversa = csv.GetField<string>("Total de conversas");
@@ -83,6 +86,11 @@ public static class ChamadaExtensions
                 if (!Guid.TryParse(chamadaId, out Guid chamadaIdGuid))
                 {
                     chamadaIdGuid = new Guid();
+                }
+
+                if (!DateTime.TryParse(dataHora, out DateTime dataHoraParsed))
+                {
+                    dataHoraParsed = DateTime.MinValue;
                 }
 
                 if (!int.TryParse(tempoDeConversa, out int tempoDeConversaInt))
@@ -123,7 +131,7 @@ public static class ChamadaExtensions
                 }
 
 
-                var chamada = new Chamada(chamadaIdGuid, assistente, tempoDeConversaInt, tempoDeEsperaInt, linha);
+                var chamada = new Chamada(chamadaIdGuid, dataHoraParsed, assistente, tempoDeConversaInt, tempoDeEsperaInt, linha);
                 chamadas.Add(chamada);
             }
 

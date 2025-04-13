@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA\\CalculadoraTMA.csproj": {}
+    "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA\\CalculadoraTMA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj": {
+    "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj",
+        "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj",
         "projectName": "CalculadoraTMA.Shared.DB",
-        "projectPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj",
+        "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj",
         "packagesPath": "C:\\Users\\fagun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.DB\\obj\\",
+        "outputPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj": {
-                "projectPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj"
+              "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj": {
+                "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj"
               }
             }
           }
@@ -62,21 +62,21 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -95,18 +95,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj": {
+    "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj",
+        "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj",
         "projectName": "CalculadoraTMA.Shared.Models",
-        "projectPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj",
+        "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj",
         "packagesPath": "C:\\Users\\fagun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\obj\\",
+        "outputPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -153,21 +153,21 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -186,18 +186,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA\\CalculadoraTMA.csproj": {
+    "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA\\CalculadoraTMA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA\\CalculadoraTMA.csproj",
+        "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA\\CalculadoraTMA.csproj",
         "projectName": "CalculadoraTMA",
-        "projectPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA\\CalculadoraTMA.csproj",
+        "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA\\CalculadoraTMA.csproj",
         "packagesPath": "C:\\Users\\fagun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA\\obj\\",
+        "outputPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -218,11 +218,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj": {
-                "projectPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj"
+              "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj": {
+                "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj"
               },
-              "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj": {
-                "projectPath": "C:\\Users\\fagun\\source\\repos\\Calculadora_de_TMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj"
+              "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj": {
+                "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj"
               }
             }
           }
@@ -251,21 +251,21 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -284,7 +284,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

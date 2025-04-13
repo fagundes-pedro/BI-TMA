@@ -5,6 +5,10 @@
       {
         "Path": "CalculadoraTMA.API\\CalculadoraTMA.API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "CalculadoraTMA.Web\\CalculadoraTMA.Web.csproj",
+        "Action": "Start"
       }
     ]
   }

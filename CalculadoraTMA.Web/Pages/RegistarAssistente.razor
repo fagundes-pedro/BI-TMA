@@ -1,0 +1,42 @@
+﻿@page "/RegistarAssistente"
+@inject AssistenteAPI assistenteAPI
+@inject NavigationManager navigationManager
+
+<PageTitle>Registar Assistente</PageTitle>
+
+
+<MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
+
+    <MudText Class="mt-8" Typo="Typo.h4">Cadastro de Assistente</MudText>
+
+    <MudForm>
+
+        <MudTextField Class="mt-4" T="string" Placeholder="Nome do Assistente"
+        Variant="Variant.Outlined"
+        @bind-Value="nomeAssistente"
+        Required="true"
+        RequiredError="Campo obrigatório." />
+
+        <div class="d-flex align-center justify-space-between mt-4">
+            <MudButton Variant="Variant.Filled"
+            @onclick="Cadastrar"
+            Color="Color.Primary"
+            Class="ml-auto">
+                Cadastrar
+            </MudButton>
+        </div>
+
+    </MudForm>
+</MudPaper>
+
+@code {
+    private string nomeAssistente = string.Empty;
+    private List<string> linhasAssistente = new();
+
+    private async Task Cadastrar()
+    {
+        var assistente = new AssistenteRequest(nomeAssistente);
+        await assistenteAPI.CriarAssistenteAsync(assistente);
+        navigationManager.NavigateTo("/ExibirAssistente");
+    }
+}

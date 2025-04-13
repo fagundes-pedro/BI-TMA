@@ -47,7 +47,7 @@ internal class MenuAdicionarChamada : Menu
             Console.ReadKey();
             return;
         }
-        chamadaDal.Adicionar(new Chamada(new Guid(), assistenteEncontrado, tempoDeConversa, tempoDeEspera, linhaEncontrada));
+        chamadaDal.Adicionar(new Chamada(new Guid(), DateTime.Now, assistenteEncontrado, tempoDeConversa, tempoDeEspera, linhaEncontrada));
         Console.WriteLine("Chamada adicionada com sucesso!");
         Thread.Sleep(4000);
     }

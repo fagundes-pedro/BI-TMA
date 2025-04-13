@@ -12,14 +12,16 @@ public class Chamada
     {
         
     }
-    public Chamada(Guid id, Assistente assistente, int tempoDeCoversa, int tempoDeEspera, Linha linha)
+    public Chamada(Guid id, DateTime dataHora, Assistente assistente, int tempoDeCoversa, int tempoDeEspera, Linha linha)
     {
         ChamadaId = id;
+        DataHora = dataHora;
         Assistente = assistente;
         TempoDeChamada = tempoDeCoversa + tempoDeEspera;
         Linha = linha;
     }
     public Guid ChamadaId { get; set; }
+    public DateTime DataHora { get; set; }
     public int AssistenteId { get; set; }
     public virtual Assistente Assistente { get; set; }
     public int LinhaId { get; set; }

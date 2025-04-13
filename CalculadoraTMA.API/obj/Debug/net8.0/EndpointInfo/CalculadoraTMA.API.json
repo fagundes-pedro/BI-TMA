@@ -206,7 +206,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LinhaRequests"
+                "$ref": "#/components/schemas/LinhaRequest"
               }
             }
           },
@@ -263,7 +263,7 @@
         },
         "additionalProperties": false
       },
-      "LinhaRequests": {
+      "LinhaRequest": {
         "type": "object",
         "properties": {
           "nome": {

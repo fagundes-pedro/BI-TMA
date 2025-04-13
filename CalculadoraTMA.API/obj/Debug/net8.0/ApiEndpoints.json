@@ -28,7 +28,7 @@
     "Parameters": [
       {
         "Name": "assistenteRequest",
-        "Type": "CalculadoraTMA.API.Requests.AssistenteRequest",
+        "Type": "CalculadoraTMA.API.Request.AssistenteRequest",
         "IsRequired": true
       }
     ],
@@ -108,7 +108,7 @@
       },
       {
         "Name": "assistenteRequest",
-        "Type": "CalculadoraTMA.API.Requests.AssistenteRequest",
+        "Type": "CalculadoraTMA.API.Request.AssistenteRequest",
         "IsRequired": true
       }
     ],
@@ -239,7 +239,7 @@
       },
       {
         "Name": "linhaRequest",
-        "Type": "CalculadoraTMA.API.Requests.LinhaRequests",
+        "Type": "CalculadoraTMA.API.Request.LinhaRequest",
         "IsRequired": true
       }
     ],

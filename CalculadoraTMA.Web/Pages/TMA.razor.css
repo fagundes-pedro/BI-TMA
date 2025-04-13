@@ -1,0 +1,20 @@
+﻿.table
+
+{
+    table-layout: fixed; /* Define um layout fixo para a tabela */
+    width: 100%; /* Garante que a tabela ocupe toda a largura disponível */
+}
+
+.table th, .table td {
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Esconde o texto que ultrapassar a largura da célula */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto que for cortado */
+}
+
+.table th {
+    width: 280px; /* Define uma largura fixa para os cabeçalhos */
+}
+
+.table td {
+    width: 150px; /* Define uma largura fixa para as células */
+}

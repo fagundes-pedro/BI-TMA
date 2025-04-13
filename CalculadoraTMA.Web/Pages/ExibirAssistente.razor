@@ -1,0 +1,31 @@
+﻿@page "/ExibirAssistente"
+@inject AssistenteAPI assistenteAPI
+
+<h1>DetalhesAssistente</h1>
+<tr></tr>
+<tr></tr>
+
+@foreach(var assistente in assistentes)
+{
+    <tr>@assistente.Nome</tr>
+}
+
+@code {
+    private ICollection<AssistenteResponse>? assistentes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            assistentes = await assistenteAPI.ListarAssistentesAsync();
+            if (assistentes is not null)
+            {
+                assistentes = assistentes.OrderBy(l => l.Nome).ToList();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao carregar a lista de Assistentes: {ex.Message}");
+        }
+    }
+}

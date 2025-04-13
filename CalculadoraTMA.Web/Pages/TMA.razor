@@ -1,0 +1,78 @@
+﻿@page "/TMA"
+@inject AssistenteAPI assistenteAPI
+@inject LinhaAPI linhaAPI
+
+<PageTitle>TMA</PageTitle>
+
+<h1>Tempo Médio de Chamada</h1>
+
+<p>Lista dos assistentes e seu respetivo TMA por linha</p>
+<tr></tr>
+
+@if (assistentes == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome do Assistente</th>
+                @foreach (var linha in linhas)
+                {
+                    <th colspan="2">@linha.Nome</th>
+                }
+            </tr>
+            <tr>
+                <th></th>
+                @foreach (var linha in linhas)
+                {
+                    <th>TMA</th>
+                    <th>Nº Chamadas</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var assistente in assistentes)
+            {
+                <tr>
+                    <td>@assistente.Nome</td>
+                    @foreach (var linha in linhas)
+                    {
+                        var linhaEncontrada = assistente.Linhas.FirstOrDefault(l => l.Nome == linha.Nome);
+                        <td>@(linhaEncontrada != null ? linhaEncontrada.TMA : "-")</td>
+                        <td>@(linhaEncontrada != null ? linhaEncontrada.NumeroDeChamadas : "-")</td>
+                     }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private ICollection<AssistenteResponse>? assistentes;
+    private ICollection<LinhaResponse>? linhas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            assistentes = await assistenteAPI.ListarAssistentesAsync();
+            if (assistentes is not null)
+            {
+                assistentes = assistentes.OrderBy(l => l.Nome).ToList();
+            }
+            linhas = await linhaAPI.ListarLinhasAsync();
+            if (linhas is not null)
+            {
+                linhas = linhas.OrderByDescending(l => l.Nome).ToList();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao carregar a lista de Assistentes: {ex.Message}");
+        }
+    }
+}

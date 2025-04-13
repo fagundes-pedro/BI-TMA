@@ -1,6 +1,6 @@
 ﻿using Calculadora_de_TMA.Banco;
 using Calculadora_de_TMA.Modelos;
-using CalculadoraTMA.API.Requests;
+using CalculadoraTMA.API.Request;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CalculadoraTMA.API.EndPoints;
@@ -22,13 +22,13 @@ public static class LinhaExtensions
                 Assistentes = linha.LinhasAssistentes.Select(assistente => new
                 {
                     assistente.Assistente.Nome,
-                    TMA = $"{Math.Round(assistente.TMA / 1000, 2)} segundos"
+                    TMA = $"{Math.Round(assistente.TMA / 1000, 0)} segundos"
                 })
             });
             return Results.Ok(resultado);
         }).WithTags("Linhas");
 
-        app.MapPut("/Linhas/{nome}", async (string nome, [FromServices] DAL<Linha> linhaDal, [FromServices] DAL<Assistente> assistenteDal, [FromServices] DAL<LinhaAssistente> linhaAssistenteDal, [FromBody] LinhaRequests linhaRequest) =>
+        app.MapPut("/Linhas/{nome}", async (string nome, [FromServices] DAL<Linha> linhaDal, [FromServices] DAL<Assistente> assistenteDal, [FromServices] DAL<LinhaAssistente> linhaAssistenteDal, [FromBody] LinhaRequest linhaRequest) =>
         {
             var assistente = await assistenteDal.BuscarAsync(a => a.Nome.ToUpper().Equals(nome));
             var linha = await linhaDal.BuscarAsync(l => l.Nome.ToUpper().Equals(linhaRequest.nome.ToUpper()));

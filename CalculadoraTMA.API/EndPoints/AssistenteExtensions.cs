@@ -1,6 +1,7 @@
 ﻿using Calculadora_de_TMA.Banco;
 using Calculadora_de_TMA.Modelos;
-using CalculadoraTMA.API.Requests;
+using CalculadoraTMA.API.Request;
+using CalculadoraTMA.API.Response;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CalculadoraTMA.API.EndPoints;
@@ -19,16 +20,14 @@ public static class AssistenteExtensions
             var resultado = assistentes.Select(assistente =>
             {
                 assistente.CalcularTMA();
-                return new
-                {
+                return new AssistenteResponse(
                     assistente.Nome,
-                    Linhas = assistente.LinhasAssistentes.Select(linha => new
-                    {
+                    assistente.LinhasAssistentes.Select(linha => new LinhaResponse(
                         linha.Linha.Nome,
-                        TMA = $"{Math.Round(linha.TMA / 1000, 2)} segundos",
-                        NumeroDeChamadas = $"{assistente.Chamadas.Count(c => c.Linha.Nome.Equals(linha.Linha.Nome))} chamadas"
-                    })
-                };
+                        $"{Math.Round(linha.TMA / 1000, 0)} segundos",
+                        $"{assistente.Chamadas.Count(c => c.Linha.Nome.Equals(linha.Linha.Nome))} chamadas"
+                    )).ToList()
+                );
             });
             return Results.Ok(resultado);
         }).WithTags("Assistentes");
@@ -47,7 +46,7 @@ public static class AssistenteExtensions
                 Linhas = assistente.LinhasAssistentes.Select(linha => new
                 {
                     linha.Linha.Nome,
-                    TMA = $"{Math.Round(linha.TMA / 1000, 2)} segundos",
+                    TMA = $"{Math.Round(linha.TMA / 1000, 0)} segundos",
                     NumeroDeChamadas = $"{assistente.Chamadas.Count(c => c.Linha.Nome.Equals(linha.Linha.Nome))} chamadas"
                 })
             };

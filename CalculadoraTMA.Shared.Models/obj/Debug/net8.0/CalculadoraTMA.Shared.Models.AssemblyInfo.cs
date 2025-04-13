@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculadoraTMA.Shared.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0a0abed4a604764854892c9766b24dad7a16fca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+950ee1721f4d04569bd9f81e7ce8e015fa50aa88")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculadoraTMA.Shared.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculadoraTMA.Shared.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

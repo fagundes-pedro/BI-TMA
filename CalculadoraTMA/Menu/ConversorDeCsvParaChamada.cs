@@ -55,7 +55,7 @@ public class ConversorDeCsvParaChamada
                 Console.WriteLine("Chamada já adicionada\n");
                 continue;
             }
-            chamadas.Add(new Chamada(chamadaId, assistente, tempoDeCoversa, tempoDeEspera, linhaDal.Buscar(l => l.Nome.Equals(nomeDaLinha))));
+            chamadas.Add(new Chamada(chamadaId, DateTime.Now, assistente, tempoDeCoversa, tempoDeEspera, linhaDal.Buscar(l => l.Nome.Equals(nomeDaLinha))));
             Console.WriteLine("Chamada adicionada\n");
         }
         return chamadas;

@@ -18,8 +18,4 @@
     <ProjectReference Include="..\CalculadoraTMA.Shared.Models\CalculadoraTMA.Shared.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Responses\" />
-  </ItemGroup>
-
 </Project>
