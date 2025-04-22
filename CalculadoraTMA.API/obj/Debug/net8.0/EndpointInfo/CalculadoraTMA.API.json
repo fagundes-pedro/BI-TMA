@@ -127,29 +127,6 @@
         }
       }
     },
-    "/Chamadas/{nome}": {
-      "get": {
-        "tags": [
-          "Chamadas"
-        ],
-        "parameters": [
-          {
-            "name": "nome",
-            "in": "path",
-            "required": true,
-            "style": "simple",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
     "/Chamadas/Upload": {
       "post": {
         "tags": [

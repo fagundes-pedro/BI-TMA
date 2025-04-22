@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculadoraTMA.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+950ee1721f4d04569bd9f81e7ce8e015fa50aa88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5d7f9fa7510eca0ab5fc3143fea56e530605df9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculadoraTMA.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculadoraTMA.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

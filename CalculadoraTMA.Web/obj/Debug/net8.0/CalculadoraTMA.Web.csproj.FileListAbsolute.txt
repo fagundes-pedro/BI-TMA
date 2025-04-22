@@ -1076,6 +1076,6 @@ C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\bin\Debug\net8.0\w
 C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\webcil\FluentValidation.wasm
 C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\r1w8onenbj-fvee6lf8f0.gz
-C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\4yfdpdjukw-xv1chx8p78.gz
-C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\0o9f5kjj4x-39oyg3x62r.gz
-C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\hkr5n9e7rr-xhy5dyznr6.gz
+C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\4yfdpdjukw-ekx28hcnuk.gz
+C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\0o9f5kjj4x-9fr027cfr8.gz
+C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\hkr5n9e7rr-qjeb9zepi1.gz

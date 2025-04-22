@@ -1,3 +1,3 @@
 ﻿namespace CalculadoraTMA.Web.Response;
 
-public record AssistenteResponse(string Nome, List<LinhaResponse> Linhas);
+public record AssistenteResponse(int Id, string Nome, List<LinhaResponse> Linhas);

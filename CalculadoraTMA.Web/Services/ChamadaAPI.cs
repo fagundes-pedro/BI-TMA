@@ -1,4 +1,4 @@
-﻿using CalculadoraTMA.API.Response;
+﻿using CalculadoraTMA.Web.Response;
 using System.Net.Http;
 using System.Net.Http.Json;
 
@@ -11,8 +11,12 @@ public class ChamadaAPI
     {
         _httpClient = factory.CreateClient("API");
     }
-    public async Task<ICollection<ChamadaResponse>?> ListarAssistentesAsync()
+    public async Task<ICollection<ChamadaResponse>?> ListarChamadasAsync()
     {
-        return await _httpClient.GetFromJsonAsync<ICollection<ChamadaResponse>>("/Chamada");
+        return await _httpClient.GetFromJsonAsync<ICollection<ChamadaResponse>>("/Chamadas");
+    }
+    public async Task RemoverChamadasAsync()
+    {
+        await _httpClient.DeleteAsync("/Chamadas/All");
     }
 }

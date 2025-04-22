@@ -1,10 +1,12 @@
 ﻿using Calculadora_de_TMA.Banco;
 using Calculadora_de_TMA.Modelos;
+using CalculadoraTMA.API.Response;
 using CsvHelper;
 using CsvHelper.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using System.Formats.Asn1;
 using System.Globalization;
+using System.Linq;
 
 namespace CalculadoraTMA.API.EndPoints;
 
@@ -19,19 +21,21 @@ public static class ChamadaExtensions
             {
                 return Results.NotFound("Não foram encontradas chamadas registadas");
             }
-            var resultado = chamadas.Select(chamada => new
+            var resultado = chamadas.Select(chamada =>
             {
-                chamada.ChamadaId,
-                DataHora = chamada.DataHora.ToString("dd/MM/yyyy HH:mm:ss"),
-                AssistenteNome = chamada.Assistente.Nome,
-                LinhaNome = chamada.Linha.Nome,
-                TempoDeChamda = $"{Math.Round(chamada.TempoDeChamada / 1000, 0)} segundos"
+                return new ChamadaResponse(
+                    chamada.ChamadaId.ToString(),
+                    chamada.DataHora.ToString("dd/MM/yyyy HH:mm:ss"),
+                    chamada.Assistente.Nome,
+                    chamada.Linha.Nome,
+                    Math.Round(chamada.TempoDeChamada / 1000, 0)
+                );
             });
             return Results.Ok(resultado);
         })
         .WithTags("Chamadas");
 
-        app.MapGet("/Chamadas/{nome}", async(string nome, [FromServices] DAL<Chamada> chamadaDal) =>
+        /*app.MapGet("/Chamadas/{nome}", async (string nome, [FromServices] DAL<Chamada> chamadaDal) =>
         {
             var chamadas = await chamadaDal.ListarAsync();
             if (chamadas is null || !chamadas.Any())
@@ -49,7 +53,7 @@ public static class ChamadaExtensions
             });
             return Results.Ok(resultado);
         })
-        .WithTags("Chamadas");
+        .WithTags("Chamadas");*/
 
         app.MapPost("/Chamadas/Upload", async (HttpRequest request, [FromServices] DAL<Chamada> chamadaDal, [FromServices] DAL<Assistente> assistenteDal, [FromServices] DAL<Linha> linhaDal, [FromServices] DAL<LinhaAssistente> linhaAssistenteDal) =>
         {

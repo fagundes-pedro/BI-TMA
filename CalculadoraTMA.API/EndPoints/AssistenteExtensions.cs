@@ -21,6 +21,7 @@ public static class AssistenteExtensions
             {
                 assistente.CalcularTMA();
                 return new AssistenteResponse(
+                    assistente.AssistenteId,
                     assistente.Nome,
                     assistente.LinhasAssistentes.Select(linha => new LinhaResponse(
                         linha.Linha.Nome,
