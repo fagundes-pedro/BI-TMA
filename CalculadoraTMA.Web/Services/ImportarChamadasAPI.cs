@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Headers;
 using System.Net.Http.Json;
 
-namespace CalculadoraTMA.Web.Services;
+namespace BI_TMA.Web.Services;
 
 public class ImportarChamadasAPI
 {

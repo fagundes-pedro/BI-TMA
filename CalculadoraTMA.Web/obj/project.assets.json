@@ -2415,11 +2415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Web\\CalculadoraTMA.Web.csproj",
-      "projectName": "CalculadoraTMA.Web",
-      "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Web\\CalculadoraTMA.Web.csproj",
+      "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\BI_TMA.Web.csproj",
+      "projectName": "BI_TMA.Web",
+      "projectPath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\BI_TMA.Web.csproj",
       "packagesPath": "C:\\Users\\fagun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Web\\obj\\",
+      "outputPath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

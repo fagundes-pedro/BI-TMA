@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculadora_de_TMA.Modelos;
+namespace BI_TMA.Shared.Models.Modelos;
 
 public class LinhaAssistente
 {

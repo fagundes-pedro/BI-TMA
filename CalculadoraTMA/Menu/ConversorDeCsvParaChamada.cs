@@ -1,11 +1,12 @@
-﻿using Calculadora_de_TMA.Banco;
+﻿using BI_TMA.Shared.DB.Banco;
+using BI_TMA.Shared.Models.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculadora_de_TMA.Modelos;
+namespace Calculadora_de_TMA.Menu;
 
 public class ConversorDeCsvParaChamada
 {
@@ -16,7 +17,7 @@ public class ConversorDeCsvParaChamada
         DAL<LinhaAssistente> linhaAssistenteDal = new(context);
         DAL<Chamada> chamadaDal = new(context);
         List<Chamada> chamadas = new List<Chamada>();
-        string[] linhas = System.IO.File.ReadAllLines(caminho);
+        string[] linhas = File.ReadAllLines(caminho);
         foreach (var linha in linhas)
         {
             var campos = linha.Split(',');

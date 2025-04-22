@@ -1,6 +1,6 @@
-﻿using Calculadora_de_TMA.Banco;
-using Calculadora_de_TMA.Modelos;
-using Calculadora_de_TMA; // Adicionando a diretiva using para o namespace correto
+﻿using Calculadora_de_TMA;
+using BI_TMA.Shared.Models.Modelos;
+using BI_TMA.Shared.DB.Banco;
 
 
 namespace Calculadora_de_TMA.Menu;

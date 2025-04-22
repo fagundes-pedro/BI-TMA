@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointAssistentes\u003Eb__0_0",
     "RelativePath": "Assistentes",
     "HttpMethod": "GET",
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointAssistentes\u003Eb__0_2",
     "RelativePath": "Assistentes",
     "HttpMethod": "POST",
@@ -28,7 +28,7 @@
     "Parameters": [
       {
         "Name": "assistenteRequest",
-        "Type": "CalculadoraTMA.API.Request.AssistenteRequest",
+        "Type": "BI_TMA.API.Request.AssistenteRequest",
         "IsRequired": true
       }
     ],
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointAssistentes\u003Eb__0_4",
     "RelativePath": "Assistentes/{id}",
     "HttpMethod": "DELETE",
@@ -69,7 +69,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointAssistentes\u003Eb__0_1",
     "RelativePath": "Assistentes/{nome}",
     "HttpMethod": "GET",
@@ -94,7 +94,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.AssistenteExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointAssistentes\u003Eb__0_3",
     "RelativePath": "Assistentes/{nome}",
     "HttpMethod": "PUT",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "assistenteRequest",
-        "Type": "CalculadoraTMA.API.Request.AssistenteRequest",
+        "Type": "BI_TMA.API.Request.AssistenteRequest",
         "IsRequired": true
       }
     ],
@@ -124,7 +124,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointChamadas\u003Eb__0_0",
     "RelativePath": "Chamadas",
     "HttpMethod": "GET",
@@ -143,7 +143,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointChamadas\u003Eb__0_2",
     "RelativePath": "Chamadas/All",
     "HttpMethod": "DELETE",
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointChamadas\u003Eb__0_1",
     "RelativePath": "Chamadas/Upload",
     "HttpMethod": "POST",
@@ -181,7 +181,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.LinhaExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.LinhaExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointLinhas\u003Eb__0_0",
     "RelativePath": "Linhas",
     "HttpMethod": "GET",
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.LinhaExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.LinhaExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointLinhas\u003Eb__0_1",
     "RelativePath": "Linhas/{nome}",
     "HttpMethod": "PUT",
@@ -214,7 +214,7 @@
       },
       {
         "Name": "linhaRequest",
-        "Type": "CalculadoraTMA.API.Request.LinhaRequest",
+        "Type": "BI_TMA.API.Request.LinhaRequest",
         "IsRequired": true
       }
     ],
@@ -230,7 +230,7 @@
     ]
   },
   {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.LinhaExtensions\u002B\u003C\u003Ec",
+    "ContainingType": "BI_TMA.API.EndPoints.LinhaExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CAddEndPointLinhas\u003Eb__0_2",
     "RelativePath": "Linhas/{nome}",
     "HttpMethod": "DELETE",

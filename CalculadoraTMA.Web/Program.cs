@@ -1,5 +1,5 @@
-using CalculadoraTMA.Web;
-using CalculadoraTMA.Web.Services;
+using BI_TMA.Web.Services;
+using BI_TMA.Web;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;

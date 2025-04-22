@@ -1,3 +1,3 @@
-﻿namespace CalculadoraTMA.Web.Response;
+﻿namespace BI_TMA.Web.Response;
 
-public record ChamadaResponse(string Id, string DataHora, string NomeAssistente, string NomeLinha, Double Duracao);
+public record ChamadaResponse(string Id, string DataHora, string NomeAssistente, string NomeLinha, double Duracao);

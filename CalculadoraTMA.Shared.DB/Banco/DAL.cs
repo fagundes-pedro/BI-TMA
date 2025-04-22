@@ -1,4 +1,4 @@
-﻿using Calculadora_de_TMA.Modelos;
+﻿using BI_TMA.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculadora_de_TMA.Banco;
+namespace BI_TMA.Shared.DB.Banco;
 
 public class DAL<T> where T : class
 {

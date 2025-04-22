@@ -1,6 +1,6 @@
-﻿using Calculadora_de_TMA.Banco;
-using Calculadora_de_TMA.Modelos;
-using CalculadoraTMA.API.Response;
+﻿using BI_TMA.Shared.DB.Banco;
+using BI_TMA.Shared.Models.Modelos;
+using BI_TMA.API.Response;
 using CsvHelper;
 using CsvHelper.Configuration;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +8,7 @@ using System.Formats.Asn1;
 using System.Globalization;
 using System.Linq;
 
-namespace CalculadoraTMA.API.EndPoints;
+namespace BI_TMA.API.EndPoints;
 
 public static class ChamadaExtensions
 {
@@ -141,7 +141,7 @@ public static class ChamadaExtensions
 
             foreach (var chamada in chamadas)
             {
-                var linhaAssistente = linhasAssistentes.FirstOrDefault(la => (la.AssistenteId == chamada.AssistenteId && la.LinhaId == chamada.LinhaId));
+                var linhaAssistente = linhasAssistentes.FirstOrDefault(la => la.AssistenteId == chamada.AssistenteId && la.LinhaId == chamada.LinhaId);
                 if (linhaAssistente is null)
                 {
                     linhaAssistente = new LinhaAssistente(chamada.Assistente.AssistenteId, chamada.Linha.LinhaId);

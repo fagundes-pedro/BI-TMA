@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "co8ViN/rWXY=",
+  "dgSpecHash": "WKFwKB3S//w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA\\CalculadoraTMA.csproj",
+  "projectFilePath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA\\BI_TMA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fagun\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

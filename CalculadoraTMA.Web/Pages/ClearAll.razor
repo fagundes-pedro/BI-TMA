@@ -14,7 +14,7 @@
         @if (_processing)
         {
             <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
-            <MudText Class="ms-2">Processing</MudText>
+            <MudText Class="ms-2">Eliminando Chamadas</MudText>
         }
         else
         {
@@ -27,6 +27,7 @@
     private bool _processing = false;
     private async Task EliminarDados()
     {
+        _processing = true;
         try
         {
             var confirm = await DialogService.ShowMessageBox(
@@ -38,11 +39,10 @@
                 _processing = true;
                 await chamadaAPI.RemoverChamadasAsync();
                 var chamadas = await chamadaAPI.ListarChamadasAsync();
-                if (chamadas is null)
+                if (chamadas is not null)
                 {
                     Snackbar.Add($"Erro ao eliminar chamadas", MudBlazor.Severity.Error);
                 }
-                _processing = false;
             }
         }
         catch

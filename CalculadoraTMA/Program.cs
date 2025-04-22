@@ -1,6 +1,7 @@
-﻿using Calculadora_de_TMA.Banco;
+﻿using BI_TMA.Shared.DB;
 using Calculadora_de_TMA.Menu;
-using Calculadora_de_TMA.Modelos;
+using BI_TMA.Shared.Models;
+using BI_TMA.Shared.DB.Banco;
 
 var context = new CalculadoraDeTmaContext();
 

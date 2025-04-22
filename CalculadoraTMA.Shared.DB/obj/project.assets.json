@@ -1460,7 +1460,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "CalculadoraTMA.Shared.Models/1.0.0": {
+      "BI_TMA.Shared.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1469,10 +1469,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4"
         },
         "compile": {
-          "bin/placeholder/CalculadoraTMA.Shared.Models.dll": {}
+          "bin/placeholder/BI_TMA.Shared.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CalculadoraTMA.Shared.Models.dll": {}
+          "bin/placeholder/BI_TMA.Shared.Models.dll": {}
         }
       }
     }
@@ -4122,15 +4122,15 @@
         "version.txt"
       ]
     },
-    "CalculadoraTMA.Shared.Models/1.0.0": {
+    "BI_TMA.Shared.Models/1.0.0": {
       "type": "project",
-      "path": "../CalculadoraTMA.Shared.Models/CalculadoraTMA.Shared.Models.csproj",
-      "msbuildProject": "../CalculadoraTMA.Shared.Models/CalculadoraTMA.Shared.Models.csproj"
+      "path": "../CalculadoraTMA.Shared.Models/BI_TMA.Shared.Models.csproj",
+      "msbuildProject": "../CalculadoraTMA.Shared.Models/BI_TMA.Shared.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CalculadoraTMA.Shared.Models >= 1.0.0",
+      "BI_TMA.Shared.Models >= 1.0.0",
       "Microsoft.Data.SqlClient >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Proxies >= 9.0.4",
@@ -4145,11 +4145,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj",
-      "projectName": "CalculadoraTMA.Shared.DB",
-      "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\CalculadoraTMA.Shared.DB.csproj",
+      "projectUniqueName": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Shared.DB\\BI_TMA.Shared.DB.csproj",
+      "projectName": "BI_TMA.Shared.DB",
+      "projectPath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Shared.DB\\BI_TMA.Shared.DB.csproj",
       "packagesPath": "C:\\Users\\fagun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.DB\\obj\\",
+      "outputPath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Shared.DB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4170,8 +4170,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj": {
-              "projectPath": "C:\\Users\\fagun\\source\\repos\\CalculadoraTMA\\CalculadoraTMA.Shared.Models\\CalculadoraTMA.Shared.Models.csproj"
+            "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Shared.Models\\BI_TMA.Shared.Models.csproj": {
+              "projectPath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Shared.Models\\BI_TMA.Shared.Models.csproj"
             }
           }
         }

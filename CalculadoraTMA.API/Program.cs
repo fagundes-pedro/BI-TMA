@@ -1,6 +1,6 @@
-using Calculadora_de_TMA.Banco;
-using Calculadora_de_TMA.Modelos;
-using CalculadoraTMA.API.EndPoints;
+using BI_TMA.API.EndPoints;
+using BI_TMA.Shared.DB.Banco;
+using BI_TMA.Shared.Models.Modelos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;

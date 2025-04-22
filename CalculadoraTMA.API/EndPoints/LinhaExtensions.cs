@@ -1,9 +1,9 @@
-﻿using Calculadora_de_TMA.Banco;
-using Calculadora_de_TMA.Modelos;
-using CalculadoraTMA.API.Request;
+﻿using BI_TMA.API.Request;
+using BI_TMA.Shared.DB.Banco;
+using BI_TMA.Shared.Models.Modelos;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CalculadoraTMA.API.EndPoints;
+namespace BI_TMA.API.EndPoints;
 
 public static class LinhaExtensions
 {

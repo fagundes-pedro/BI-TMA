@@ -1,5 +1,5 @@
-﻿using Calculadora_de_TMA.Banco;
-using Calculadora_de_TMA.Modelos;
+﻿using BI_TMA.Shared.DB.Banco;
+using BI_TMA.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

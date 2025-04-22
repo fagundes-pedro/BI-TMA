@@ -1,3 +1,3 @@
-﻿namespace CalculadoraTMA.Web.Request;
+﻿namespace BI_TMA.Web.Request;
 
 public record LinhaRequest(string nome);

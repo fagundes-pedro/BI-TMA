@@ -16,57 +16,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = CalculadoraTMA.Web
 build_property.RootNamespace = CalculadoraTMA.Web
-build_property.ProjectDir = C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web\
+build_property.ProjectDir = C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\fagun\source\repos\CalculadoraTMA\CalculadoraTMA.Web
+build_property.MSBuildProjectDirectory = C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/App.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Pages/ClearAll.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Pages/ClearAll.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xlYXJBbGwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Pages/ExibirAssistente.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Pages/ExibirAssistente.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhpYmlyQXNzaXN0ZW50ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Pages/ExibirChamadas.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Pages/ExibirChamadas.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhpYmlyQ2hhbWFkYXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Pages/Home.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Pages/ImportarChamadas.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Pages/ImportarChamadas.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wb3J0YXJDaGFtYWRhcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Pages/RegistarAssistente.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Pages/RegistarAssistente.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0YXJBc3Npc3RlbnRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/_Imports.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Layout/MainLayout.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-xt208v2lr6
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Layout/NavMenu.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2a72g2tahx
 
-[C:/Users/fagun/source/repos/CalculadoraTMA/CalculadoraTMA.Web/Pages/TMA.razor]
+[C:/Users/fagun/source/repos/BI-TMA/CalculadoraTMA.Web/Pages/TMA.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVE1BLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-h8jagmx3c2

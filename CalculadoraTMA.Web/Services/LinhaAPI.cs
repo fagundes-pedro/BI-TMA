@@ -1,7 +1,7 @@
-﻿using CalculadoraTMA.Web.Response;
+﻿using BI_TMA.Web.Response;
 using System.Net.Http.Json;
 
-namespace CalculadoraTMA.Web.Services;
+namespace BI_TMA.Web.Services;
 
 public class LinhaAPI
 {
