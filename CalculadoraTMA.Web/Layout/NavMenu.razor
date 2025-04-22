@@ -2,57 +2,13 @@
 
     <MudNavLink Href="/" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
     <MudNavGroup Title="Assistentes" Icon="@Icons.Material.Filled.People" Expanded="true">
-        <MudNavLink Href="/RegistarAssistente">Registar Assistente</MudNavLink>
-        <MudNavLink Href="/ExibirAssistente">Detalhes</MudNavLink>
+        <MudNavLink Href="/RegistarAssistente" Icon="@Icons.Material.Filled.PersonAdd">Registar Assistente</MudNavLink>
+        <MudNavLink Href="/ExibirAssistente" Icon="@Icons.Material.Filled.List">Lista</MudNavLink>
     </MudNavGroup>
-    <MudNavGroup Title="Chamdadas" Icon="@Icons.Material.Filled.QueueMusic" Expanded="true">
-        <MudNavLink Href="/ExibirChamadas">Exibir Chamadas</MudNavLink>
-        <MudNavLink Href="/ImportarChamadas">Importar Chamadas</MudNavLink>
+    <MudNavGroup Title="Chamdadas" Icon="@Icons.Material.Filled.PermPhoneMsg" Expanded="true">
+        <MudNavLink Href="/ExibirChamadas" Icon="@Icons.Material.Filled.PlaylistPlay">Exibir Chamadas</MudNavLink>
+        <MudNavLink Href="/ImportarChamadas" Icon="@Icons.Custom.FileFormats.FileExcel">Importar Chamadas</MudNavLink>
     </MudNavGroup>
-    <MudNavLink Href="/TMA">TMA</MudNavLink>
+    <MudNavLink Href="/TMA" Icon="@Icons.Material.Filled.Timer">TMA</MudNavLink>
+    <MudNavLink Href="/ClearAll" Icon="@Icons.Material.Filled.Delete">Limpar Dados</MudNavLink>
 </MudNavMenu>
-
-@*@<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Menu</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
-
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="RegistarAssistente">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Registar Assistente
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="ImportarChamadas">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Importar Chamadas
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="TMA">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> TMA
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}*@

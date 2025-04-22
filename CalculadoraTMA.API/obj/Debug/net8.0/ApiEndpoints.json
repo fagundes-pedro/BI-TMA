@@ -144,32 +144,7 @@
   },
   {
     "ContainingType": "CalculadoraTMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CAddEndPointChamadas\u003Eb__0_1",
-    "RelativePath": "Chamadas/{nome}",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "nome",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ],
-    "Tags": [
-      "Chamadas"
-    ]
-  },
-  {
-    "ContainingType": "CalculadoraTMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CAddEndPointChamadas\u003Eb__0_3",
+    "Method": "\u003CAddEndPointChamadas\u003Eb__0_2",
     "RelativePath": "Chamadas/All",
     "HttpMethod": "DELETE",
     "IsController": false,
@@ -188,7 +163,7 @@
   },
   {
     "ContainingType": "CalculadoraTMA.API.EndPoints.ChamadaExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CAddEndPointChamadas\u003Eb__0_2",
+    "Method": "\u003CAddEndPointChamadas\u003Eb__0_1",
     "RelativePath": "Chamadas/Upload",
     "HttpMethod": "POST",
     "IsController": false,

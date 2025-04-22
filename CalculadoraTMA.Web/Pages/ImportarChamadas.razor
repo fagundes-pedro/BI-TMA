@@ -3,8 +3,9 @@
 @inject ImportarChamadasAPI importarChamadasAPI
 @inject ISnackbar Snackbar
 
+<PageTitle>Importar Chamadas</PageTitle>
 
-<MudStack Style="width: 100%">
+<MudStack Style ="margin-left: 20px; width: 80%">
     <MudForm Model="@_model"
     @bind-IsValid="_isValid"
     @bind-IsTouched="_isTouched"
@@ -46,10 +47,18 @@
                     Open file picker
                 </MudButton>
                 <MudButton Color="Color.Primary"
-                Disabled="@(!_isValid || !_isTouched || _model.Files is null || !_model.Files.Any())"
+                           Disabled="@(!_isValid || !_isTouched || _model.Files is null || !_model.Files.Any() || _processing)"
                 OnClick="@Upload"
                 Variant="Variant.Filled">
-                    Upload
+                    @if (_processing)
+                    {
+                        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                        <MudText Class="ms-2">Uploading</MudText>
+                    }
+                    else
+                    {
+                        <MudText>Upload</MudText>
+                    }
                 </MudButton>
                 <MudButton Color="Color.Error"
                 Disabled="@(_model.Files is null || !_model.Files.Any())"
@@ -86,6 +95,7 @@
     private MudFileUpload<IReadOnlyList<IBrowserFile>>? _fileUpload;
     private bool _isValid;
     private bool _isTouched;
+    private bool _processing = false;
     private const string FileContent = "this is content";
     private const string DefaultDragClass = "relative rounded-lg border-2 border-dashed pa-4 mt-4 mud-width-full mud-height-full";
     private string _dragClass = DefaultDragClass;
@@ -97,14 +107,14 @@
             Snackbar.Add("Nenhum ficheiro selecionado para upload.", MudBlazor.Severity.Warning);
             return;
         }
-
         foreach (var file in _fileUpload.Files)
         {
+            _processing = true;
             using var stream = file.OpenReadStream(maxAllowedSize: 10 * 1024 * 1024); // Limite de 10 MB
             await importarChamadasAPI.EnviarFicheiroAsync(stream, file.Name);
         }
-
         Snackbar.Add("Ficheiros enviados com sucesso!", MudBlazor.Severity.Success);
+        _processing = false;
         await ClearAsync();
     }
 

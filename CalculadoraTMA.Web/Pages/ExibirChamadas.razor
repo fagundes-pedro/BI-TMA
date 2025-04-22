@@ -1,8 +1,102 @@
 ﻿@page "/ExibirChamadas"
 @inject ChamadaAPI chamadaAPI
+@inject ISnackbar Snackbar
 
-<h1>ExibirChamadas</h1>
+<PageTitle>Chamadas</PageTitle>
+
+<MudTable ServerData="ServerReload" Style="margin-left: 20px" Dense="true" Hover="true" @ref="table">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Lista de Chamadas</MudText>
+        <MudSpacer />
+        <MudTextField T="string" ValueChanged="@(s=>OnSearch(s))" Placeholder="Pesquisar" Adornment="Adornment.Start"
+        AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh><MudTableSortLabel SortLabel="idSort" T="ChamadaResponse">Id</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortLabel="dataHoraSort" T="ChamadaResponse">Data/Hora</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortLabel="nomeAssistenteSort" T="ChamadaResponse">Nome do Assistente</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortLabel="nomeLinhaSort" T="ChamadaResponse">Linha</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortLabel="duracaoSort" T="ChamadaResponse">Duração da Chamada</MudTableSortLabel></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.Id</MudTd>
+        <MudTd DataLabel="Data/Hora">@context.DataHora</MudTd>
+        <MudTd DataLabel="Nome do Assistente">@context.NomeAssistente</MudTd>
+        <MudTd DataLabel="Linha">@context.NomeLinha</MudTd>
+        <MudTd DataLabel="Duração da Chamada">@context.Duracao</MudTd>
+    </RowTemplate>
+    <NoRecordsContent>
+        <MudText>Não foram encontradas chamadas registadas</MudText>
+    </NoRecordsContent>
+    <LoadingContent>
+        <MudText>Loading...</MudText>
+    </LoadingContent>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
 
 @code {
+    private IEnumerable<ChamadaResponse> pagedData;
+    private MudTable<ChamadaResponse> table;
 
+    private int totalItems;
+    private string searchString = null;
+
+
+    private async Task<TableData<ChamadaResponse>> ServerReload(TableState state, CancellationToken token)
+    {
+        try
+        {
+            IEnumerable<ChamadaResponse> data = await chamadaAPI.ListarChamadasAsync();
+            await Task.Delay(300, token);
+            data = data.Where(chamada =>
+            {
+                if (string.IsNullOrWhiteSpace(searchString))
+                    return true;
+                if (chamada.Id.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                    return true;
+                if (chamada.NomeAssistente.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                    return true;
+                if (chamada.NomeLinha.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                    return true;
+                if (chamada.DataHora.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+                    return true;
+                return false;
+            }).ToArray();
+            totalItems = data.Count();
+            switch (state.SortLabel)
+            {
+                case "idSort":
+                    data = data.OrderByDirection(state.SortDirection, c => c.Id);
+                    break;
+                case "dataHoraSort":
+                    data = data.OrderByDirection(state.SortDirection, c => c.DataHora);
+                    break;
+                case "nomeAssistenteSort":
+                    data = data.OrderByDirection(state.SortDirection, c => c.NomeAssistente);
+                    break;
+                case "nomeLinhaSort":
+                    data = data.OrderByDirection(state.SortDirection, c => c.NomeLinha);
+                    break;
+                case "duracaoSort":
+                    data = data.OrderByDirection(state.SortDirection, c => c.Duracao);
+                    break;
+            }
+
+            pagedData = data.Skip(state.Page * state.PageSize).Take(state.PageSize).ToArray();
+            return new TableData<ChamadaResponse>() { TotalItems = totalItems, Items = pagedData };
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Não há chamadas registadas no banco de dados\n{ex.Message}", MudBlazor.Severity.Error);
+            return new TableData<ChamadaResponse>() { TotalItems = 0, Items = new List<ChamadaResponse>() };
+        }
+    }
+
+    private void OnSearch(string text)
+    {
+        searchString = text;
+        table.ReloadServerData();
+    }
 }

@@ -25,4 +25,12 @@ public class AssistenteAPI
             throw new Exception("Erro ao criar assistente");
         }
     }
+    public async Task EliminarAssistenteAsync(int Id)
+    {
+        var response = await _httpClient.DeleteAsync($"/Assistentes/{Id}");
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception("Erro ao eliminar assistente");
+        }
+    }
 }

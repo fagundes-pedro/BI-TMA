@@ -1,17 +1,35 @@
 ﻿@page "/ExibirAssistente"
 @inject AssistenteAPI assistenteAPI
+@inject IDialogService DialogService
+@inject ISnackbar Snackbar
 
-<h1>DetalhesAssistente</h1>
-<tr></tr>
-<tr></tr>
+<PageTitle>Assistentes</PageTitle>
 
-@foreach(var assistente in assistentes)
-{
-    <tr>@assistente.Nome</tr>
-}
+<h1 style="margin-left: 20px">Lista dos Assistentes</h1>
+
+<MudTextField @bind-Value="searchTerm" Placeholder="Pesquisar assistente..." Variant="Variant.Outlined" Style="margin: 20px; width: 300px;" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" />
+
+<MudTable Items="FilteredAssistentes" Hover="true" Bordered="true" Striped="true" Dense="true" Style="margin: 20px;">
+    <HeaderContent>
+        <MudTh>Nome</MudTh>
+        <MudTh>Ações</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Nome">@context.Nome</MudTd>
+        <MudTd DataLabel="Ações">
+            <MudButton Variant="Variant.Filled" Color="Color.Error" Size="Size.Small" StartIcon="@Icons.Material.Filled.Delete" OnClick="() => EliminarAssistente(context)">
+                Eliminar
+            </MudButton>
+        </MudTd>
+    </RowTemplate>
+    <NoRecordsContent>
+        <MudText>Não há assistentes registados</MudText>
+    </NoRecordsContent>
+</MudTable>
 
 @code {
     private ICollection<AssistenteResponse>? assistentes;
+    private string searchTerm = string.Empty;
 
     protected override async Task OnInitializedAsync()
     {
@@ -20,12 +38,35 @@
             assistentes = await assistenteAPI.ListarAssistentesAsync();
             if (assistentes is not null)
             {
-                assistentes = assistentes.OrderBy(l => l.Nome).ToList();
+                assistentes = assistentes.OrderBy(a => a.Nome).ToList();
             }
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Erro ao carregar a lista de Assistentes: {ex.Message}");
+            catch (Exception ex)
+    {
+            Snackbar.Add($"Não há chamadas registadas no banco de dados\n{ex.Message}", MudBlazor.Severity.Error);
         }
+    }
+
+    private IEnumerable<AssistenteResponse> FilteredAssistentes =>
+        string.IsNullOrWhiteSpace(searchTerm)
+            ? assistentes ?? Enumerable.Empty<AssistenteResponse>()
+            : assistentes?.Where(a => a.Nome.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) ?? Enumerable.Empty<AssistenteResponse>();
+
+    private async Task EliminarAssistente(AssistenteResponse assistente)
+    {
+        if (assistente is not null)
+               {
+                   var confirm = await DialogService.ShowMessageBox(
+                       "Confirmação",
+                       $"Tem certeza que deseja eliminar o assistente '{assistente.Nome}'?",
+                       yesText: "Sim", noText: "Não");
+
+                   if (confirm == true)
+                   {
+                       await assistenteAPI.EliminarAssistenteAsync(assistente.Id);
+                       assistentes = assistentes?.Where(a => a.Id != assistente.Id).ToList();
+                       StateHasChanged();
+                   }
+               }
     }
 }
