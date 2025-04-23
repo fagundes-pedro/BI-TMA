@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.web\\pages\\importarchamadas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|solutionrelative:calculadoratma.web\\pages\\importarchamadas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\CalculadoraTMA.Web.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.web\\pages\\clearall.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\CalculadoraTMA.Web.csproj|solutionrelative:calculadoratma.web\\pages\\clearall.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\CalculadoraTMA.Web.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.web\\pages\\exibirassistente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\CalculadoraTMA.Web.csproj|solutionrelative:calculadoratma.web\\pages\\exibirassistente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|solutionrelative:calculadoratma.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20BF1071-19D3-4698-AEA5-47C76D209A3E}|CalculadoraTMA.API\\BI_TMA.API.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20BF1071-19D3-4698-AEA5-47C76D209A3E}|CalculadoraTMA.API\\BI_TMA.API.csproj|solutionrelative:calculadoratma.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,6 +16,10 @@
           "DockedWidth": 82,
           "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -49,65 +41,22 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ImportarChamadas.razor",
-              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ImportarChamadas.razor",
-              "RelativeDocumentMoniker": "CalculadoraTMA.Web\\Pages\\ImportarChamadas.razor",
-              "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ImportarChamadas.razor",
-              "RelativeToolTip": "CalculadoraTMA.Web\\Pages\\ImportarChamadas.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-22T21:22:02.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Program.cs",
-              "RelativeDocumentMoniker": "CalculadoraTMA.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Program.cs",
-              "RelativeToolTip": "CalculadoraTMA.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.API\\Program.cs",
+              "RelativeDocumentMoniker": "CalculadoraTMA.API\\Program.cs",
+              "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.API\\Program.cs",
+              "RelativeToolTip": "CalculadoraTMA.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T21:17:42.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClearAll.razor",
-              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ClearAll.razor",
-              "RelativeDocumentMoniker": "CalculadoraTMA.Web\\Pages\\ClearAll.razor",
-              "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ClearAll.razor",
-              "RelativeToolTip": "CalculadoraTMA.Web\\Pages\\ClearAll.razor",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T23:49:08.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExibirAssistente.razor",
-              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "RelativeDocumentMoniker": "CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "RelativeToolTip": "CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T23:00:53.839Z",
+              "WhenOpened": "2025-04-22T23:21:05.932Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 82,
+          "DockedWidth": 200,
           "SelectedChildIndex": -1,
           "Children": [
             {

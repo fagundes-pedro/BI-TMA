@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculadora_de_TMA.Migrations
 {
-    [DbContext(typeof(CalculadoraDeTmaContext))]
+    [DbContext(typeof(BI_TMAContext))]
     partial class CalculadoraDeTmaContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

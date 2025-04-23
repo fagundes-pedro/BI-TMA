@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>d34g4nqo5o</Fingerprint>
-      <Integrity>uViJ7msIlU0j+wPm1QdOFq2Vvykig0xPFI6hnX/H4Rg=</Integrity>
+      <Fingerprint>sdfh47voxs</Fingerprint>
+      <Integrity>IFgH85T/7kN7+o1n3/cxhJdc9DGDZqlOiWDAY6uO4LU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BI_TMA.Web.styles.css'))</OriginalItemSpec>

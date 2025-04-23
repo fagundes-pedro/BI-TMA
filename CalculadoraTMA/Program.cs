@@ -3,7 +3,7 @@ using Calculadora_de_TMA.Menu;
 using BI_TMA.Shared.Models;
 using BI_TMA.Shared.DB.Banco;
 
-var context = new CalculadoraDeTmaContext();
+var context = new BI_TMAContext();
 
 var menu = new Menu();
 string opcaoDigitada = "";

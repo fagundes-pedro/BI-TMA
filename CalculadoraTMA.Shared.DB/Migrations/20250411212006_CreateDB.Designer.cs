@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculadora_de_TMA.Migrations
 {
-    [DbContext(typeof(CalculadoraDeTmaContext))]
+    [DbContext(typeof(BI_TMAContext))]
     [Migration("20250411212006_CreateDB")]
     partial class CreateDB
     {

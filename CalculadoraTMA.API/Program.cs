@@ -3,17 +3,23 @@ using BI_TMA.Shared.DB.Banco;
 using BI_TMA.Shared.Models.Modelos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration.AddAzureAppConfiguration("Endpoint=https://bitma-configuration.azconfig.io;Id=b7nw;Secret=7OGalnSC4qMWPtsjKdU2TdzP5PS4mgwwQ22vDuLMyJQUVBjCYftNJQQJ99BDAC5RqLJC3YjSAAACAZAC1iNq");
 
 builder.Services.AddCors();
 
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =>
     options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
-builder.Services.AddDbContext<CalculadoraDeTmaContext>();
+builder.Services.AddDbContext<BI_TMAContext>((options) =>
+{
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:BITMADB"]).UseLazyLoadingProxies();
+});
 builder.Services.AddTransient<DAL<Assistente>>();
 builder.Services.AddTransient<DAL<Linha>>();
 builder.Services.AddTransient<DAL<LinhaAssistente>>();

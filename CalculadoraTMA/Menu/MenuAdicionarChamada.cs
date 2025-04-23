@@ -10,7 +10,7 @@ namespace Calculadora_de_TMA.Menu;
 
 internal class MenuAdicionarChamada : Menu
 {
-    public override void Executar(CalculadoraDeTmaContext context)
+    public override void Executar(BI_TMAContext context)
     {
         base.Executar(context);
         MostrarMenu("Menu Adicionar Chamada");

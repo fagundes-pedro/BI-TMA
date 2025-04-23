@@ -11,9 +11,9 @@ namespace BI_TMA.Shared.DB.Banco;
 
 public class DAL<T> where T : class
 {
-    public readonly CalculadoraDeTmaContext context;
+    public readonly BI_TMAContext context;
 
-    public DAL(CalculadoraDeTmaContext context)
+    public DAL(BI_TMAContext context)
     {
         this.context = context;
     }

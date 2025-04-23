@@ -19,7 +19,7 @@ public class Menu
         Console.WriteLine(asteriscos + "\n");
     }
 
-    public virtual void Executar(CalculadoraDeTmaContext context)
+    public virtual void Executar(BI_TMAContext context)
     {
         Console.Clear();
     }

@@ -1,0 +1,15 @@
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\bin\Release\net8.0\BI_TMA.Shared.Models.deps.json
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\bin\Release\net8.0\BI_TMA.Shared.Models.runtimeconfig.json
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\bin\Release\net8.0\BI_TMA.Shared.Models.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\bin\Release\net8.0\BI_TMA.Shared.Models.pdb
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.csproj.AssemblyReference.cache
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.AssemblyInfoInputs.cache
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.AssemblyInfo.cs
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.csproj.CoreCompileInputs.cache
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.sourcelink.json
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\refint\BI_TMA.Shared.Models.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.pdb
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\BI_TMA.Shared.Models.genruntimeconfig.cache
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Shared.Models\obj\Release\net8.0\ref\BI_TMA.Shared.Models.dll

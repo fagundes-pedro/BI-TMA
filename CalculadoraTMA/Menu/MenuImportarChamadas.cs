@@ -7,7 +7,7 @@ namespace Calculadora_de_TMA.Menu;
 
 public class MenuImportarChamadas : Menu
 {
-    public void Executar(CalculadoraDeTmaContext context)
+    public void Executar(BI_TMAContext context)
     {
         base.Executar(context);
         MostrarMenu("Menu Importar Chamadas");
@@ -18,7 +18,7 @@ public class MenuImportarChamadas : Menu
         Thread.Sleep(2000);
     }
 
-    private void ImportarChamadas(CalculadoraDeTmaContext context)
+    private void ImportarChamadas(BI_TMAContext context)
     {
         DAL<Chamada> chamadaDal = new(context);
         DAL<Assistente> assistenteDal = new(context);

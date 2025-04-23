@@ -96,10 +96,15 @@ C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticweb
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BI_TMA.API.props
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BI_TMA.API.props
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\BI_TMA.API.csproj.Up2Date
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\BI_TMA.API.dll
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\refint\BI_TMA.API.dll
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\BI_TMA.API.pdb
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\BI_TMA.API.genruntimeconfig.cache
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\ref\BI_TMA.API.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Azure.Data.AppConfiguration.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Azure.Messaging.EventGrid.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Azure.Security.KeyVault.Secrets.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\DnsClient.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.Azure.AppConfiguration.AspNetCore.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.AzureAppConfiguration.dll

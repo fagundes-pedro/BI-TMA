@@ -4,11 +4,13 @@
     "Projects": [
       {
         "Path": "CalculadoraTMA.API\\BI_TMA.API.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "https-production"
       },
       {
         "Path": "CalculadoraTMA.Web\\BI_TMA.Web.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "https"
       }
     ]
   }

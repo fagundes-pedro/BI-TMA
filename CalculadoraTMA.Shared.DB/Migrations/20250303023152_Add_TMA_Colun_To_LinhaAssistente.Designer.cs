@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Calculadora_de_TMA.Migrations
 {
-    [DbContext(typeof(CalculadoraDeTmaContext))]
+    [DbContext(typeof(BI_TMAContext))]
     [Migration("20250303023152_Add_TMA_Colun_To_LinhaAssistente")]
     partial class Add_TMA_Colun_To_LinhaAssistente
     {

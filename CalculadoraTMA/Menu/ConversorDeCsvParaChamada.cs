@@ -10,7 +10,7 @@ namespace Calculadora_de_TMA.Menu;
 
 public class ConversorDeCsvParaChamada
 {
-    public static List<Chamada> Converter(string caminho, CalculadoraDeTmaContext context)
+    public static List<Chamada> Converter(string caminho, BI_TMAContext context)
     {
         DAL<Assistente> assistenteDal = new(context);
         DAL<Linha> linhaDal = new(context);
