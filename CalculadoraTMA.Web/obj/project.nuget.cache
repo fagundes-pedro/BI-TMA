@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oTzmjdcGyuM=",
+  "dgSpecHash": "w0xHXigSh2k=",
   "success": true,
   "projectFilePath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\BI_TMA.Web.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\8.0.15\\microsoft.aspnetcore.components.forms.8.0.15.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.aspnetcore.components.web\\8.0.15\\microsoft.aspnetcore.components.web.8.0.15.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.15\\microsoft.aspnetcore.components.webassembly.8.0.15.nupkg.sha512",
-    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\8.0.15\\microsoft.aspnetcore.components.webassembly.devserver.8.0.15.nupkg.sha512",
+    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\9.0.4\\microsoft.aspnetcore.components.webassembly.devserver.9.0.4.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.15\\microsoft.aspnetcore.metadata.8.0.15.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.4\\microsoft.extensions.configuration.9.0.4.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.4\\microsoft.extensions.configuration.abstractions.9.0.4.nupkg.sha512",
@@ -38,6 +38,9 @@
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.15\\microsoft.net.illink.tasks.8.0.15.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.4\\microsoft.net.sdk.webassembly.pack.9.0.4.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\mudblazor\\8.5.1\\mudblazor.8.5.1.nupkg.sha512",
+    "C:\\Users\\fagun\\.nuget\\packages\\syncfusion.compression.net.core\\29.1.39\\syncfusion.compression.net.core.29.1.39.nupkg.sha512",
+    "C:\\Users\\fagun\\.nuget\\packages\\syncfusion.licensing\\29.1.39\\syncfusion.licensing.29.1.39.nupkg.sha512",
+    "C:\\Users\\fagun\\.nuget\\packages\\syncfusion.xlsio.net.core\\29.1.39\\syncfusion.xlsio.net.core.29.1.39.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.4\\system.diagnostics.diagnosticsource.9.0.4.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.15.nupkg.sha512"

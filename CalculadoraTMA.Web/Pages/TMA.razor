@@ -1,12 +1,16 @@
 ﻿@page "/TMA"
 @inject AssistenteAPI assistenteAPI
 @inject LinhaAPI linhaAPI
+@inject Microsoft.JSInterop.IJSRuntime JS
 
 <PageTitle>TMA</PageTitle>
 
 <h1 style="margin-left: 20px">Tempo Médio de Chamada</h1>
-
-<p style="margin-left: 20px">Lista dos assistentes e seu respetivo TMA por linha</p>
+<MudToolBar>
+    <p style="margin-left: 20px">Lista dos assistentes e seu respetivo TMA por linha</p>
+    <MudSpacer />
+    <MudButton class="btn btn-primary" EndIcon="@Icons.Custom.FileFormats.FileExcel" onclick="@CreateDocument">Exportar Tabela</MudButton>
+</MudToolBar>
 <br />
 
 @if (assistentes is null || linhas is null)
@@ -19,7 +23,7 @@ else
         <thead>
             <tr>
                 <th class="header-centered" style="position: sticky; left: 0; background-color: white; z-index: 1">NOME DO ASSISTENTE
-                    <MudIconButton Icon="@sortIconNome" Size="Size.Small" OnClick="OrdenarPorNome" />
+                    <MudIconButton Icon="@sortIconNome" Size="MudBlazor.Size.Small" OnClick="OrdenarPorNome" />
                 </th>
                 @foreach (var linha in linhas)
                 {
@@ -121,5 +125,75 @@ else
             DadosPaginados = assistentes.Skip((paginaAtual - 1) * itensPorPagina).Take(itensPorPagina);
             StateHasChanged();
         }
+    }
+    public async void CreateDocument()
+    {
+        //Create an instance of ExcelEngine.
+        using (ExcelEngine excelEngine = new ExcelEngine())
+        {
+            IApplication application = excelEngine.Excel;
+            application.DefaultVersion = ExcelVersion.Xlsx;
+
+            //Create a workbook.
+            IWorkbook workbook = application.Workbooks.Create(1);
+            IWorksheet worksheet = workbook.Worksheets[0];
+
+            //Initialize DataTable and data get from SampleDataTable method.
+            DataTable table = CriarDataTable();
+
+            //Export data from DataTable to Excel worksheet.
+            worksheet.ImportDataTable(table, true, 1, 1);
+
+            worksheet.UsedRange.AutofitColumns();
+
+            //Save the document as a stream and return the stream.
+            using (MemoryStream stream = new MemoryStream())
+            {
+                //Save the created Excel document to MemoryStream
+                workbook.SaveAs(stream);
+
+                //Download the excel file.
+                await JS.SaveAs($"TMA_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}.xlsx", stream.ToArray());
+            }
+        }
+    }
+
+    private DataTable CriarDataTable()
+    {
+        DataTable table = new DataTable();
+
+        // Adicionar a coluna para o nome do assistente
+        table.Columns.Add("Nome do Assistente", typeof(string));
+
+        // Adicionar colunas para cada linha (TMA e Nº Chamadas)
+        if (linhas != null)
+        {
+            foreach (var linha in linhas)
+            {
+                table.Columns.Add($"{linha.Nome} - TMA", typeof(string));
+                table.Columns.Add($"{linha.Nome} - Nº Chamadas", typeof(string));
+            }
+        }
+
+        // Preencher as linhas do DataTable
+        if (assistentes != null)
+        {
+            foreach (var assistente in assistentes)
+            {
+                DataRow row = table.NewRow();
+                row["Nome do Assistente"] = assistente.Nome;
+
+                foreach (var linha in linhas)
+                {
+                    var linhaEncontrada = assistente.Linhas.FirstOrDefault(l => l.Nome == linha.Nome);
+                    row[$"{linha.Nome} - TMA"] = linhaEncontrada != null ? linhaEncontrada.TMA.ToString() : "-";
+                    row[$"{linha.Nome} - Nº Chamadas"] = linhaEncontrada != null ? linhaEncontrada.NumeroDeChamadas.ToString() : "-";
+                }
+
+                table.Rows.Add(row);
+            }
+        }
+
+        return table;
     }
 }

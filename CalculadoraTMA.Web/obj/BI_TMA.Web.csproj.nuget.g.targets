@@ -7,6 +7,6 @@
     <Import Project="$(NuGetPackageRoot)mudblazor\8.5.1\build\MudBlazor.targets" Condition="Exists('$(NuGetPackageRoot)mudblazor\8.5.1\build\MudBlazor.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack\9.0.4\build\Microsoft.NET.Sdk.WebAssembly.Pack.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.sdk.webassembly.pack\9.0.4\build\Microsoft.NET.Sdk.WebAssembly.Pack.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.binder\9.0.4\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.Binder.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.binder\9.0.4\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.Binder.targets')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.devserver\8.0.15\build\Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.devserver\8.0.15\build\Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.devserver\9.0.4\build\Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.devserver\9.0.4\build\Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets')" />
   </ImportGroup>
 </Project>

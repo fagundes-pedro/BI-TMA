@@ -13,7 +13,7 @@
     <MudButton Disabled="@_processing" OnClick="EliminarDados" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.DeleteForever" Style="background-color: red; color: white; width: 200px; height: 60px;">
         @if (_processing)
         {
-            <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+            <MudProgressCircular Class="ms-n1" Size="MudBlazor.Size.Small" Indeterminate="true" />
             <MudText Class="ms-2">Eliminando Chamadas</MudText>
         }
         else

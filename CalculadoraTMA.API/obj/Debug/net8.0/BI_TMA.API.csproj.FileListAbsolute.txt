@@ -108,3 +108,4 @@ C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Azure.Sec
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\DnsClient.dll
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.Azure.AppConfiguration.AspNetCore.dll
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.AzureAppConfiguration.dll
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

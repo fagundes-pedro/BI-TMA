@@ -9,6 +9,7 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddMudServices();
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Key");
 
 builder.Services.AddTransient<AssistenteAPI>();
 builder.Services.AddTransient<LinhaAPI>();

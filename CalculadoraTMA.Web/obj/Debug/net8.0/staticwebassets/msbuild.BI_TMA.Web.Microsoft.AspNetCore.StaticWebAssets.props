@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>WasmResource</AssetTraitName>
       <AssetTraitValue>settings</AssetTraitValue>
-      <Fingerprint>sx99m5of5o</Fingerprint>
-      <Integrity>kOTDxs+rz/59CDLuWLTzy1VIQ2xccA0c9IW0npmH+Xg=</Integrity>
+      <Fingerprint>vfzdlbr5i0</Fingerprint>
+      <Integrity>Vdqm8fHcZ83M0VdAHrN7JW0wc40sUCmPKkxnVSpI0hw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\appsettings.json'))</OriginalItemSpec>
@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n7nvpy2bhf</Fingerprint>
-      <Integrity>vRcn83TqxUDuX5QHW+DOs+iJwsUW8juPsSadnFxos7o=</Integrity>
+      <Fingerprint>wxnztawgdx</Fingerprint>
+      <Integrity>DPeNwCorNOOx/QXyIbQj83ZRd9FAempdHuP3iypy/e8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>

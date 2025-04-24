@@ -116,7 +116,7 @@
           "build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/8.0.15": {
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/9.0.4": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
@@ -592,6 +592,45 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/MudBlazor.props": {}
+        }
+      },
+      "Syncfusion.Compression.Net.Core/29.1.39": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/29.1.39": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/29.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "29.1.39",
+          "Syncfusion.Licensing": "29.1.39"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.XlsIO.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.XlsIO.Portable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.DiagnosticSource/9.0.4": {
@@ -742,7 +781,7 @@
           "build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/8.0.15": {
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/9.0.4": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
@@ -1218,6 +1257,45 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/MudBlazor.props": {}
+        }
+      },
+      "Syncfusion.Compression.Net.Core/29.1.39": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/29.1.39": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/29.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "29.1.39",
+          "Syncfusion.Licensing": "29.1.39"
+        },
+        "compile": {
+          "lib/net8.0/Syncfusion.XlsIO.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.XlsIO.Portable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Diagnostics.DiagnosticSource/9.0.4": {
@@ -1377,10 +1455,10 @@
         "microsoft.aspnetcore.components.webassembly.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.WebAssembly.DevServer/8.0.15": {
-      "sha512": "gRvDGsRDgP8gu+LK/mxjX4Fszo1T5vjWfexWhWovgq0XX7oBFla6vMdeFuvKPUaN2nnJkQqu80zXSe3JREL5jA==",
+    "Microsoft.AspNetCore.Components.WebAssembly.DevServer/9.0.4": {
+      "sha512": "XaFkWZzoDpiqiRgsJYJu5kB1Rpf8kbHju0Crjq0x4EjMtBzzpdmMUHWCj4eQ46/+r8GZNtWIo42a1FY6bc6pfQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.devserver/8.0.15",
+      "path": "microsoft.aspnetcore.components.webassembly.devserver/9.0.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1388,7 +1466,7 @@
         "Icon.png",
         "THIRD-PARTY-NOTICES.txt",
         "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets",
-        "microsoft.aspnetcore.components.webassembly.devserver.8.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.devserver.9.0.4.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.devserver.nuspec",
         "tools/ARM64/aspnetcorev2_inprocess.dll",
         "tools/BlazorDebugProxy/BrowserDebugHost.dll",
@@ -1482,6 +1560,8 @@
         "tools/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml",
         "tools/Microsoft.AspNetCore.Server.Kestrel.dll",
         "tools/Microsoft.AspNetCore.Server.Kestrel.xml",
+        "tools/Microsoft.AspNetCore.StaticAssets.dll",
+        "tools/Microsoft.AspNetCore.StaticAssets.xml",
         "tools/Microsoft.AspNetCore.StaticFiles.dll",
         "tools/Microsoft.AspNetCore.StaticFiles.xml",
         "tools/Microsoft.AspNetCore.WebUtilities.dll",
@@ -1529,7 +1609,6 @@
         "tools/Microsoft.Net.Http.Headers.dll",
         "tools/Microsoft.Net.Http.Headers.xml",
         "tools/System.Diagnostics.EventLog.dll",
-        "tools/System.IO.Pipelines.dll",
         "tools/System.Security.Cryptography.Pkcs.dll",
         "tools/System.Security.Cryptography.Xml.dll",
         "tools/blazor-devserver.deps.json",
@@ -1537,9 +1616,9 @@
         "tools/blazor-devserver.exe",
         "tools/blazor-devserver.runtimeconfig.json",
         "tools/blazor-devserver.xml",
-        "tools/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
-        "tools/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll",
-        "tools/runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "tools/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll",
+        "tools/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll",
+        "tools/runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll",
         "tools/x64/aspnetcorev2_inprocess.dll",
         "tools/x86/aspnetcorev2_inprocess.dll"
       ]
@@ -2340,6 +2419,67 @@
         "staticwebassets/MudBlazor.min.js"
       ]
     },
+    "Syncfusion.Compression.Net.Core/29.1.39": {
+      "sha512": "3ZlFdzy1GgqN2rLSl3xYrpT75kbtpSfL8rD2c0MmeSgy5vXU0M7za5HY1kgw5H9W+0dNa3Dj5Qjiba7ilu1hPQ==",
+      "type": "package",
+      "path": "syncfusion.compression.net.core/29.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net8.0/Syncfusion.Compression.Portable.dll",
+        "lib/net8.0/Syncfusion.Compression.Portable.xml",
+        "lib/net9.0/Syncfusion.Compression.Portable.dll",
+        "lib/net9.0/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.xml",
+        "syncfusion.compression.net.core.29.1.39.nupkg.sha512",
+        "syncfusion.compression.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Licensing/29.1.39": {
+      "sha512": "WW+Gp+KOVl2+t0kwdUL6X6AaYRaSgOxnSuZ34hXVArTrKMAdDHTCykeE8ypJOJfZJitGn3LvR7aQtfTzuhhhUw==",
+      "type": "package",
+      "path": "syncfusion.licensing/29.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net462/Syncfusion.Licensing.dll",
+        "lib/net8.0/Syncfusion.Licensing.dll",
+        "lib/net9.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.29.1.39.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.XlsIO.Net.Core/29.1.39": {
+      "sha512": "VpFdgwDwez6QWOvPOcjUYH6VbEBQ4heee1RlEj6OmZf90jLwdFLLGQVt4IitU2GabRa+QnsyVYfUT8l94GwpUg==",
+      "type": "package",
+      "path": "syncfusion.xlsio.net.core/29.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/net8.0/Syncfusion.XlsIO.Portable.xml",
+        "lib/net9.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/net9.0/Syncfusion.XlsIO.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.xml",
+        "syncfusion.xlsio.net.core.29.1.39.nupkg.sha512",
+        "syncfusion.xlsio.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/9.0.4": {
       "sha512": "Be0emq8bRmcK4eeJIFUt9+vYPf7kzuQrFs8Ef1CdGvXpq/uSve22PTSkRF09bF/J7wmYJ2DHf2v7GaT3vMXnwQ==",
       "type": "package",
@@ -2401,11 +2541,12 @@
     "net8.0": [
       "FluentValidation >= 11.11.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.15",
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.15",
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 9.0.4",
       "Microsoft.Extensions.Http >= 9.0.4",
       "Microsoft.NET.ILLink.Tasks >= 8.0.15",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 9.0.4",
-      "MudBlazor >= 8.5.1"
+      "MudBlazor >= 8.5.1",
+      "Syncfusion.XlsIO.Net.Core >= 29.1.39"
     ]
   },
   "packageFolders": {
@@ -2469,7 +2610,7 @@
           "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.15, )"
+            "version": "[9.0.4, )"
           },
           "Microsoft.Extensions.Http": {
             "target": "Package",
@@ -2490,6 +2631,10 @@
           "MudBlazor": {
             "target": "Package",
             "version": "[8.5.1, )"
+          },
+          "Syncfusion.XlsIO.Net.Core": {
+            "target": "Package",
+            "version": "[29.1.39, )"
           }
         },
         "imports": [
