@@ -35,25 +35,25 @@
                         </MudText>
                         @foreach (var file in _model.Files?.Select(file => file.Name) ?? Enumerable.Empty<string>())
                         {
-                            <MudChip T="string" Color="Color.Dark" Text="@file" />
+                            <MudChip T="string" Color="MudBlazor.Color.Dark" Text="@file" />
                         }
                     </MudPaper>
                 </ActivatorContent>
             </MudFileUpload>
             <MudToolBar Gutters="@false"
             Class="relative d-flex justify-end gap-4">
-                <MudButton Color="Color.Primary"
+                <MudButton Color="MudBlazor.Color.Primary"
                 OnClick="@OpenFilePickerAsync"
                 Variant="Variant.Filled">
                     ABRIR PESQUISADOR DE FICHEIROS
                 </MudButton>
-                <MudButton Color="Color.Primary"
+                <MudButton Color="MudBlazor.Color.Primary"
                            Disabled="@(!_isValid || !_isTouched || _model.Files is null || !_model.Files.Any() || _processing)"
                 OnClick="@Upload"
                 Variant="Variant.Filled">
                     @if (_processing)
                     {
-                        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                        <MudProgressCircular Class="ms-n1" Size="MudBlazor.Size.Small" Indeterminate="true" />
                         <MudText Class="ms-2">CARREGANDO</MudText>
                     }
                     else
@@ -61,7 +61,7 @@
                         <MudText>CARREGAR</MudText>
                     }
                 </MudButton>
-                <MudButton Color="Color.Error"
+                <MudButton Color="MudBlazor.Color.Error"
                 Disabled="@(_model.Files is null || !_model.Files.Any())"
                 OnClick="@ClearAsync"
                 Variant="Variant.Filled">
@@ -72,7 +72,7 @@
         <MudItem>
             @if (_fileUpload?.ValidationErrors.Any() ?? false)
             {
-                <MudText Color="Color.Error"
+                <MudText Color="MudBlazor.Color.Error"
                 Typo="@Typo.caption">
                     @_fileUpload?.ValidationErrors[0]
                 </MudText>

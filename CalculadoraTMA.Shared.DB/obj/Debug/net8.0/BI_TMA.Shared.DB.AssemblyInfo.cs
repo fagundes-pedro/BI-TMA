@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BI_TMA.Shared.DB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a90115be0f9d665d5c7fa979eda789d6fda59b23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b4ad92df0fc2479a2076940446bf956eb91f384")]
 [assembly: System.Reflection.AssemblyProductAttribute("BI_TMA.Shared.DB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BI_TMA.Shared.DB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
