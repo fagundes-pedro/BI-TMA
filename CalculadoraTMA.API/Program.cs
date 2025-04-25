@@ -9,7 +9,6 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.Configuration.AddAzureAppConfiguration("Endpoint=https://bitma-configuration.azconfig.io;Id=b7nw;Secret=7OGalnSC4qMWPtsjKdU2TdzP5PS4mgwwQ22vDuLMyJQUVBjCYftNJQQJ99BDAC5RqLJC3YjSAAACAZAC1iNq");
 
 builder.Services.AddCors();
 

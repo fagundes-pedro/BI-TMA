@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BI_TMA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a90115be0f9d665d5c7fa979eda789d6fda59b23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ae8d702e2b5784400c8f7cab5bb8b5efb495e11")]
 [assembly: System.Reflection.AssemblyProductAttribute("BI_TMA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BI_TMA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

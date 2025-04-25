@@ -20,9 +20,9 @@ public class BI_TMAContext : DbContext
 
 
 
-    private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog = CalculadoraDeTMA; Integrated Security = True; Connect Timeout = 0; Encrypt=False;Trust Server Certificate=False;Application Intent = ReadWrite; Multi Subnet Failover=False";
+    private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog = CalculadoraDeTMA; Integrated Security = True; Encrypt=False;Trust Server Certificate=False;Application Intent = ReadWrite; Multi Subnet Failover=False";
 
-    public BI_TMAContext(DbContextOptions<BI_TMAContext> options) : base(options)
+    public BI_TMAContext(DbContextOptions options) : base(options)
     {
     }
 

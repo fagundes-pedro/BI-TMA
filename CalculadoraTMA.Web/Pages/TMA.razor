@@ -75,7 +75,7 @@ else
     private int totalPaginas = 0;
 
     private bool ordenacaoAscendenteNome = true;
-    
+
     private string sortIconNome => ordenacaoAscendenteNome ? Icons.Material.Filled.ArrowUpward : Icons.Material.Filled.ArrowDownward;
 
     private void OrdenarPorNome()
@@ -128,31 +128,80 @@ else
     }
     public async void CreateDocument()
     {
-        //Create an instance of ExcelEngine.
+
         using (ExcelEngine excelEngine = new ExcelEngine())
         {
             IApplication application = excelEngine.Excel;
             application.DefaultVersion = ExcelVersion.Xlsx;
 
-            //Create a workbook.
+
             IWorkbook workbook = application.Workbooks.Create(1);
             IWorksheet worksheet = workbook.Worksheets[0];
 
-            //Initialize DataTable and data get from SampleDataTable method.
             DataTable table = CriarDataTable();
 
-            //Export data from DataTable to Excel worksheet.
+
+            worksheet.ImportDataTable(table, true, 2, 1);
+
+            worksheet.Range["B1:C1"].Merge();
+            worksheet.Range["D1:E1"].Merge();
+            worksheet.Range["F1:G1"].Merge();
+            worksheet.Range["H1:I1"].Merge();
+            worksheet.Range["J1:K1"].Merge();
+            worksheet.Range["L1:M1"].Merge();
+            worksheet.Range["N1:O1"].Merge();
+            worksheet.Range["P1:Q1"].Merge();
+            worksheet.Range["R1:S1"].Merge();
+            worksheet.Range["T1:U1"].Merge();
+            worksheet.Range["V1:W1"].Merge();
+            worksheet.Range["X1:Y1"].Merge();
+            worksheet.Range["Z1:AA1"].Merge();
+
+            table = CriarHeader();
+
             worksheet.ImportDataTable(table, true, 1, 1);
+            
+            worksheet.Range["B2"].Value = "TMA";
+            worksheet.Range["C2"].Value = "Nº de Chamadas";
+            worksheet.Range["D2"].Value = "TMA";
+            worksheet.Range["E2"].Value = "Nº de Chamadas";
+            worksheet.Range["F2"].Value = "TMA";
+            worksheet.Range["G2"].Value = "Nº de Chamadas";
+            worksheet.Range["H2"].Value = "TMA";
+            worksheet.Range["I2"].Value = "Nº de Chamadas";
+            worksheet.Range["J2"].Value = "TMA";
+            worksheet.Range["K2"].Value = "Nº de Chamadas";
+            worksheet.Range["L2"].Value = "TMA";
+            worksheet.Range["M2"].Value = "Nº de Chamadas";
+            worksheet.Range["N2"].Value = "TMA";
+            worksheet.Range["O2"].Value = "Nº de Chamadas";
+            worksheet.Range["P2"].Value = "TMA";
+            worksheet.Range["Q2"].Value = "Nº de Chamadas";
+            worksheet.Range["R2"].Value = "TMA";
+            worksheet.Range["S2"].Value = "Nº de Chamadas";
+            worksheet.Range["T2"].Value = "TMA";
+            worksheet.Range["U2"].Value = "Nº de Chamadas";
+            worksheet.Range["V2"].Value = "TMA";
+            worksheet.Range["W2"].Value = "Nº de Chamadas";
+            worksheet.Range["X2"].Value = "TMA";
+            worksheet.Range["Y2"].Value = "Nº de Chamadas";
+            worksheet.Range["Z2"].Value = "TMA";
+            worksheet.Range["AA2"].Value = "Nº de Chamadas";
+
 
             worksheet.UsedRange.AutofitColumns();
+            worksheet.Range["A1:AA1"].CellStyle.Font.Bold = true;
+            worksheet.Range["A1:AA1"].CellStyle.HorizontalAlignment = ExcelHAlign.HAlignCenter;
+            worksheet.Range["A1:AA1"].CellStyle.VerticalAlignment = ExcelVAlign.VAlignCenter;
+            worksheet.Range["A2:AA2"].CellStyle.Font.Bold = true;
+            worksheet.Range["A2:AA2"].CellStyle.HorizontalAlignment = ExcelHAlign.HAlignCenter;
+            worksheet.Range["A2:AA2"].CellStyle.VerticalAlignment = ExcelVAlign.VAlignCenter;
+            worksheet.Range["A1:A2"].Merge();
 
-            //Save the document as a stream and return the stream.
             using (MemoryStream stream = new MemoryStream())
             {
-                //Save the created Excel document to MemoryStream
-                workbook.SaveAs(stream);
 
-                //Download the excel file.
+                workbook.SaveAs(stream);
                 await JS.SaveAs($"TMA_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}.xlsx", stream.ToArray());
             }
         }
@@ -162,11 +211,10 @@ else
     {
         DataTable table = new DataTable();
 
-        // Adicionar a coluna para o nome do assistente
         table.Columns.Add("Nome do Assistente", typeof(string));
 
-        // Adicionar colunas para cada linha (TMA e Nº Chamadas)
-        if (linhas != null)
+
+        if (linhas is not null)
         {
             foreach (var linha in linhas)
             {
@@ -175,8 +223,7 @@ else
             }
         }
 
-        // Preencher as linhas do DataTable
-        if (assistentes != null)
+        if (assistentes is not null)
         {
             foreach (var assistente in assistentes)
             {
@@ -194,6 +241,23 @@ else
             }
         }
 
+        return table;
+    }
+    private DataTable CriarHeader()
+    {
+        DataTable table = new DataTable();
+
+        table.Columns.Add("Nome do Assistente", typeof(string));
+        if(linhas is not null)
+        {
+            int i = 0;
+            foreach (var linha in linhas)
+            {
+                table.Columns.Add(linha.Nome, typeof(string));
+                table.Columns.Add($"{i}", typeof(string));
+                i++;
+            }
+        }
         return table;
     }
 }

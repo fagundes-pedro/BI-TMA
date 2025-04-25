@@ -5,7 +5,7 @@
       {
         "Path": "CalculadoraTMA.API\\BI_TMA.API.csproj",
         "Action": "Start",
-        "DebugTarget": "https-production"
+        "DebugTarget": "https"
       },
       {
         "Path": "CalculadoraTMA.Web\\BI_TMA.Web.csproj",
