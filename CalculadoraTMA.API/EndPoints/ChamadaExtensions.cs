@@ -25,7 +25,7 @@ public static class ChamadaExtensions
             {
                 return new ChamadaResponse(
                     chamada.ChamadaId.ToString(),
-                    chamada.DataHora.ToString("dd/MM/yyyy HH:mm:ss"),
+                    chamada.DataHora.ToString("g", new CultureInfo("pt-BR")),
                     chamada.Assistente.Nome,
                     chamada.Linha.Nome,
                     Math.Round(chamada.TempoDeChamada / 1000, 0)
@@ -34,26 +34,6 @@ public static class ChamadaExtensions
             return Results.Ok(resultado);
         })
         .WithTags("Chamadas");
-
-        /*app.MapGet("/Chamadas/{nome}", async (string nome, [FromServices] DAL<Chamada> chamadaDal) =>
-        {
-            var chamadas = await chamadaDal.ListarAsync();
-            if (chamadas is null || !chamadas.Any())
-            {
-                return Results.NotFound($"Não foram encontradas chamadas registadas para o assistente {nome}");
-            }
-            var chamadasDoAssistente = chamadas.Where(chamada => chamada.Assistente.Nome.ToUpper().Equals(nome.ToUpper()));
-            var resultado = chamadasDoAssistente.Select(chamada => new
-            {
-                chamada.ChamadaId,
-                DataHora = chamada.DataHora.ToString("dd/MM/yyyy HH:mm:ss"),
-                AssistenteNome = chamada.Assistente.Nome,
-                LinhaNome = chamada.Linha.Nome,
-                TempoDeChamda = $"{Math.Round(chamada.TempoDeChamada / 1000, 0)} segundos"
-            });
-            return Results.Ok(resultado);
-        })
-        .WithTags("Chamadas");*/
 
         app.MapPost("/Chamadas/Upload", async (HttpRequest request, [FromServices] DAL<Chamada> chamadaDal, [FromServices] DAL<Assistente> assistenteDal, [FromServices] DAL<Linha> linhaDal, [FromServices] DAL<LinhaAssistente> linhaAssistenteDal) =>
         {
@@ -64,11 +44,12 @@ public static class ChamadaExtensions
 
             var file = request.Form.Files[0];
             using var stream = new StreamReader(file.OpenReadStream());
+            
             using var csv = new CsvReader(stream, new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                MissingFieldFound = null, // Ignora campos ausentes
-                HeaderValidated = null, // Ignora validação de cabeçalhos
-                BadDataFound = null // Ignora dados ruins
+                MissingFieldFound = null,
+                HeaderValidated = null,
+                BadDataFound = null
             });
 
             var chamadas = new List<Chamada>();
@@ -92,7 +73,7 @@ public static class ChamadaExtensions
                     chamadaIdGuid = new Guid();
                 }
 
-                if (!DateTime.TryParse(dataHora, out DateTime dataHoraParsed))
+                if (!DateTime.TryParse(dataHora, new CultureInfo("pt-BR"), out DateTime dataHoraParsed))
                 {
                     dataHoraParsed = DateTime.MinValue;
                 }
