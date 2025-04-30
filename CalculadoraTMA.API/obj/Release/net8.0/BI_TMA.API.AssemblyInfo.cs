@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BI_TMA.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ae8d702e2b5784400c8f7cab5bb8b5efb495e11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b331eff0bd7af91aedb256b9736ff3843ac536fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("BI_TMA.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BI_TMA.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
