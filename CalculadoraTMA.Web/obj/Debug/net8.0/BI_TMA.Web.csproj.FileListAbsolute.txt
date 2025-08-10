@@ -1090,6 +1090,6 @@ C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compresse
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\1oeg3gu59k-quoocm7eja.gz
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\6yqx5xk16a-rpaqpfejam.gz
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\ukwgpizpti-d3mc8ysewi.gz
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\2s536z635k-x51lckcrqq.gz
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\bx5o25xkxk-kgwq8qfnjn.gz
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\i58z3cfcxr-rhu4d0lbe5.gz
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\2s536z635k-yorpiw1bgs.gz
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\bx5o25xkxk-cw3ik4plhj.gz
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.Web\obj\Debug\net8.0\compressed\i58z3cfcxr-585de1edt3.gz

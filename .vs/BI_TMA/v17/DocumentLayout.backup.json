@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.web\\pages\\tma.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|solutionrelative:calculadoratma.web\\pages\\tma.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.web\\pages\\exibirchamadas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|solutionrelative:calculadoratma.web\\pages\\exibirchamadas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|c:\\users\\fagun\\source\\repos\\bi-tma\\calculadoratma.web\\pages\\exibirassistente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BAA60EAA-BD99-44ED-9357-378BB19E8190}|CalculadoraTMA.Web\\BI_TMA.Web.csproj|solutionrelative:calculadoratma.web\\pages\\exibirassistente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 82,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExibirAssistente.razor",
-              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "RelativeDocumentMoniker": "CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "RelativeToolTip": "CalculadoraTMA.Web\\Pages\\ExibirAssistente.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T19:44:11.031Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,22 +24,9 @@
               "RelativeDocumentMoniker": "CalculadoraTMA.Web\\Pages\\TMA.razor",
               "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\TMA.razor",
               "RelativeToolTip": "CalculadoraTMA.Web\\Pages\\TMA.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAI0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-10T19:41:09.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExibirChamadas.razor",
-              "DocumentMoniker": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ExibirChamadas.razor",
-              "RelativeDocumentMoniker": "CalculadoraTMA.Web\\Pages\\ExibirChamadas.razor",
-              "ToolTip": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\Pages\\ExibirChamadas.razor",
-              "RelativeToolTip": "CalculadoraTMA.Web\\Pages\\ExibirChamadas.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-10T18:58:45.814Z",
               "EditorCaption": ""
             }
           ]

@@ -9,7 +9,22 @@
 <MudToolBar>
     <p style="margin-left: 20px">Lista dos assistentes e seu respetivo TMA por linha</p>
     <MudSpacer />
-    <MudSelect class="" T="int" FitContent="true" Placeholder="itensPorPagina" Label="Itens por página" ValueChanged="HandleItensPorPaginaChanged">
+    <MudSelect class="" T="int" FitContent="true" Placeholder=@mesString Label="Mês" ValueChanged="HandleMonthChaged">
+        <MudSelectItem T="int" Value="1">Janeiro</MudSelectItem>
+        <MudSelectItem T="int" Value="2">Fevereiro</MudSelectItem>
+        <MudSelectItem T="int" Value="3">Março</MudSelectItem>
+        <MudSelectItem T="int" Value="4">Abril</MudSelectItem>
+        <MudSelectItem T="int" Value="5">Maio</MudSelectItem>
+        <MudSelectItem T="int" Value="6">Junho</MudSelectItem>
+        <MudSelectItem T="int" Value="7">Julho</MudSelectItem>
+        <MudSelectItem T="int" Value="8">Agosto</MudSelectItem>
+        <MudSelectItem T="int" Value="9">Setembro</MudSelectItem>
+        <MudSelectItem T="int" Value="10">Outubro</MudSelectItem>
+        <MudSelectItem T="int" Value="11">Novembro</MudSelectItem>
+        <MudSelectItem T="int" Value="12">Dezembro</MudSelectItem>
+    </MudSelect>
+    <MudSpacer/>
+    <MudSelect class="" T="int" FitContent="true" Placeholder="10" Label="Itens por página" ValueChanged="HandleItensPorPaginaChanged">
         <MudSelectItem T="int" Value="10">10</MudSelectItem>
         <MudSelectItem T="int" Value="15">15</MudSelectItem>
         <MudSelectItem T="int" Value="25">25</MudSelectItem>
@@ -17,9 +32,6 @@
     </MudSelect>
     <MudSpacer />
     <MudPagination Count="@totalPaginas" SelectedChanged="HandlePageChanged"></MudPagination>
-    <MudSelect class="" T="string" FitContent="true" Placeholder="mes" Label="Mês">
-        <MudSelectItem T="string" Value="mes">@mes</MudSelectItem>
-    </MudSelect>
     <MudSpacer />
     <MudButton class="btn btn-primary" EndIcon="@Icons.Custom.FileFormats.FileExcel" onclick="@CreateDocument">Exportar Tabela</MudButton>
 </MudToolBar>
@@ -66,8 +78,6 @@ else
             }
         </tbody>
     </MudSimpleTable>
-    <MudToolBar>
-    </MudToolBar>
 }
 
 @code {
@@ -77,8 +87,8 @@ else
     private int paginaAtual = 1;
     private int itensPorPagina;
     private int totalPaginas = 0;
-    private string? mes = DateTime.Now.Month.ToString();
-    private string? mesPorExtenso;
+    private int mesAtual = DateTime.Now.Month;
+    private string mesString = "Janeiro";
 
     private bool ordenacaoAscendenteNome = true;
 
@@ -100,6 +110,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        mesString = mesAtual.ToString();
+
         assistentes = await assistenteAPI.ListarAssistentesAsync();
         linhas = await linhaAPI.ListarLinhasAsync();
         if (assistentes is not null)
@@ -113,6 +125,12 @@ else
     private void HandlePageChanged(int page)
     {
         paginaAtual = page;
+        AtualizarDados();
+    }
+
+    private void HandleMonthChaged(int mes)
+    {
+        mesAtual = mes;
         AtualizarDados();
     }
 

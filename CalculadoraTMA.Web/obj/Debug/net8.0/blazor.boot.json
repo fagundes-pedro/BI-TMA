@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BI_TMA.Web",
   "resources": {
-    "hash": "sha256-FAo9rd31PNmGGJX819VUsmICYcK9zCe8esO3XIdNDRM=",
+    "hash": "sha256-mcPoAULFx+IxVamB2AdlcRcM6c13kt+4yj674O4YCq4=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-1QpKPnxEuRCElzcp+e3MrovJeAJkuzqKmRQay/6Aa08="
     },
@@ -220,10 +220,10 @@
       "mscorlib.wasm": "sha256-UnQd0YPXNpwbXsKqO8RAqgUVuwZsSpprfAIPpdV/y1Q=",
       "netstandard.wasm": "sha256-/QbD8JDZyYwfyk89W3qJL3HTAINDCVziZIySHIZcDhw=",
       "System.Private.CoreLib.wasm": "sha256-oBqNgH7R24FqGbaL3XnfQDqn3rk28jERFosgAryKT6U=",
-      "BI_TMA.Web.wasm": "sha256-2yqRJociS1uzDvxAVLdrKPaaZK277NGMFsZKrmhuzsM="
+      "BI_TMA.Web.wasm": "sha256-jgXggeX8CbKnN3SjeiR+AWC9LmE8Uv21si5UnduUG1M="
     },
     "pdb": {
-      "BI_TMA.Web.pdb": "sha256-LHky5Luq6pL9o4tMXKDMiPWjLOFlTxSDtZCCbfshAKc="
+      "BI_TMA.Web.pdb": "sha256-PNg4lJBzAVQcJz4R91Uj2ymw487/VD/IswFitIpNuoI="
     }
   },
   "cacheBootResources": true,
