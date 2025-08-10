@@ -4,9 +4,11 @@
 
 <PageTitle>Chamadas</PageTitle>
 
-<MudTable ServerData="ServerReload" Style="margin-left: 20px" Dense="true" Hover="true" @ref="table">
+<MudTable ServerData="ServerReload" Style="margin-left: 20px" Dense="true" Hover="true" FixedHeader="true" Height="800px" @ref="table">
     <ToolBarContent>
-        <MudText Typo="Typo.h6">Lista de Chamadas</MudText>
+        <h1>Lista de Chamadas</h1>
+        <MudSpacer />
+        <MudTablePager RowsPerPageString="Chamadas por página"/>
         <MudSpacer />
         <MudTextField T="string" ValueChanged="@(s=>OnSearch(s))" Placeholder="Pesquisar" Adornment="Adornment.Start"
                       AdornmentIcon="@Icons.Material.Filled.Search" IconSize="MudBlazor.Size.Medium" Class="mt-0"></MudTextField>
@@ -31,9 +33,6 @@
     <LoadingContent>
         <MudText>Loading...</MudText>
     </LoadingContent>
-    <PagerContent>
-        <MudTablePager />
-    </PagerContent>
 </MudTable>
 
 @code {

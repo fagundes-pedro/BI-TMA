@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "w0xHXigSh2k=",
+  "dgSpecHash": "oBzGLy8mGik=",
   "success": true,
   "projectFilePath": "C:\\Users\\fagun\\source\\repos\\BI-TMA\\CalculadoraTMA.Web\\BI_TMA.Web.csproj",
   "expectedPackageFiles": [
@@ -35,15 +35,15 @@
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.4\\microsoft.extensions.primitives.9.0.4.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.jsinterop\\8.0.15\\microsoft.jsinterop.8.0.15.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.15\\microsoft.jsinterop.webassembly.8.0.15.nupkg.sha512",
-    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.15\\microsoft.net.illink.tasks.8.0.15.nupkg.sha512",
-    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.4\\microsoft.net.sdk.webassembly.pack.9.0.4.nupkg.sha512",
+    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.18\\microsoft.net.illink.tasks.8.0.18.nupkg.sha512",
+    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.7\\microsoft.net.sdk.webassembly.pack.9.0.7.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\mudblazor\\8.5.1\\mudblazor.8.5.1.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\syncfusion.compression.net.core\\29.1.39\\syncfusion.compression.net.core.29.1.39.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\syncfusion.licensing\\29.1.39\\syncfusion.licensing.29.1.39.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\syncfusion.xlsio.net.core\\29.1.39\\syncfusion.xlsio.net.core.29.1.39.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.4\\system.diagnostics.diagnosticsource.9.0.4.nupkg.sha512",
     "C:\\Users\\fagun\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
-    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.15.nupkg.sha512"
+    "C:\\Users\\fagun\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.18\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.18.nupkg.sha512"
   ],
   "logs": []
 }
