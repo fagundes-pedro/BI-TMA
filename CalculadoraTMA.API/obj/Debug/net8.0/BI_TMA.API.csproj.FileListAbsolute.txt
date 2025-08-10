@@ -90,12 +90,6 @@ C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\scopedcss
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets\msbuild.BI_TMA.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets\msbuild.BI_TMA.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets\msbuild.build.BI_TMA.API.props
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BI_TMA.API.props
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BI_TMA.API.props
-C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\BI_TMA.API.csproj.Up2Date
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\BI_TMA.API.dll
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\refint\BI_TMA.API.dll
@@ -109,3 +103,8 @@ C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\DnsClient
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.Azure.AppConfiguration.AspNetCore.dll
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.AzureAppConfiguration.dll
 C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\fagun\source\repos\BI-TMA\CalculadoraTMA.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

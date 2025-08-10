@@ -47,7 +47,7 @@ public class DAL<T> where T : class
     #region Métodos Assíncronos
     public async Task AdicionarAsync(T obj)
     {
-        context.Set<T>().Add(obj);
+        await context.Set<T>().AddAsync(obj);
         await context.SaveChangesAsync();
     }
     public async Task AtualizarAsync(T obj)

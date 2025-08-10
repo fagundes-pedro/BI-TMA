@@ -1,4 +1,3 @@
-wwwroot\appsettings.json
 wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
@@ -7,3 +6,4 @@ wwwroot\icon-192.png
 wwwroot\images\layout-genesys.PNG
 wwwroot\images\repsol-logo.png
 wwwroot\index.html
+wwwroot\appsettings.json
